@@ -1,0 +1,44 @@
+.nav-config ul li a{
+  color: white;
+
+
+}
+
+#primary-nav {
+  background-color: #4E6D68;
+
+}
+.avisado-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+.branding {
+  color: white;
+}
+
+.full-width-image {
+  height: 600px;
+  background: url("../img/Background_19-01.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: auto;
+}
+
+.carousel-caption-modified {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#main-photo {
+  border-radius: 50%;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+  padding-top: 70px;
+}
+
+
+.container-fluid #img-span:hover, .container-fluid #img-span:focus {
+    color: #333;
+    background-color: transparent;
+}
