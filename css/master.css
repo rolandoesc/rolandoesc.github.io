@@ -1,6 +1,25 @@
+@font-face {
+  font-family: Coco-Gothic;
+  src: url('fonts/coco-gothic/Coco-Gothic-Regular-trial.ttf');
+}
+
+@font-face {
+  font-family: Coco-Gothic;
+  src: url('fonts/coco-gothic/Coco-Gothic-Bold-trial.ttf');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: Coco-Gothic;
+  src: url('fonts/coco-gothic/Coco-Gothic-Italic-trial.ttf');
+  font-style: italic;
+
+}
+
 body{
 
   background-color: #FCFFF7;
+  font-family: 'Coco-Gothic', sans-serif;
 
 }
 .nav-config ul li a{
@@ -59,7 +78,7 @@ body{
 
 .my-goals-section{
 
-  background-color: #CA745E;
+  background-color: #F8E09C;
   padding: 0.5em;
 }
 
@@ -69,7 +88,7 @@ body{
 
 .my-goals h1{
   margin-bottom: 2em;
-  color: #FCFFF7;
+  color: #473247;
 }
 
 .container-fluid #img-span:hover, .container-fluid #img-span:focus {
@@ -119,6 +138,6 @@ body{
 }
 
 .listas li a h5{
-  color: white;
+  color: #473247;
 
 }
