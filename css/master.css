@@ -49,12 +49,19 @@ body{
   background-color: #FCFFF7;
 }
 
+.my-goals-section{
+
+  background-color: #F4A259;
+  padding: 0.5em;
+}
+
 .my-goals{
   padding-top: 1.5em;
 }
 
 .my-goals h1{
   margin-bottom: 2em;
+  color: #FCFFF7;
 }
 
 .container-fluid #img-span:hover, .container-fluid #img-span:focus {
