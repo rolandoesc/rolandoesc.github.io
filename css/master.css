@@ -1,3 +1,8 @@
+body{
+
+  background-color: #FCFFF7;
+
+}
 .nav-config ul li a{
   color: white;
 
@@ -5,7 +10,7 @@
 }
 
 #primary-nav {
-  background-color: #4E6D68;
+  background-color: #046865;
 
 }
 .avisado-img {
@@ -37,8 +42,63 @@
   padding-top: 70px;
 }
 
+.about-me{
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 1.5em;
+  background-color: #FCFFF7;
+}
+
+.my-goals{
+  padding-top: 1.5em;
+}
+
+.my-goals h1{
+  margin-bottom: 2em;
+}
 
 .container-fluid #img-span:hover, .container-fluid #img-span:focus {
     color: #333;
     background-color: transparent;
+}
+
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+}
+
+.rounded-icon{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+}
+
+.list-logos {
+    max-width: 992px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.col-list-logos {
+    box-sizing: border-box;
+    width: 33.33333333%;
+    position: relative;
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.col-left {
+    padding-right: 70px;
+}
+
+.col-right {
+    padding-left: 70px;
+}
+
+.col-middle {
+    padding-left: 35px;
+    padding-right: 35px;
 }
