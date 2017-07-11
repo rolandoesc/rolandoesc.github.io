@@ -10,7 +10,9 @@ body{
 }
 
 #primary-nav {
-  background-color: #046865;
+  background-color: #473247;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 
 }
 .avisado-img {
@@ -42,16 +44,22 @@ body{
   padding-top: 70px;
 }
 
+.about-me-section{
+  background-color: #734855;
+}
+
+
 .about-me{
   margin-top: 5em;
   margin-bottom: 5em;
   padding-top: 1.5em;
   background-color: #FCFFF7;
+  border: solid #734855 1pt;
 }
 
 .my-goals-section{
 
-  background-color: #F4A259;
+  background-color: #CA745E;
   padding: 0.5em;
 }
 
@@ -108,4 +116,9 @@ body{
 .col-middle {
     padding-left: 35px;
     padding-right: 35px;
+}
+
+.listas li a h5{
+  color: white;
+
 }
