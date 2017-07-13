@@ -65,6 +65,8 @@ body{
 
 .about-me-section{
   background-color: #734855;
+  padding-left: 8em;
+  padding-right: 8em;
 }
 
 
@@ -117,12 +119,13 @@ body{
 
 .col-list-logos {
     box-sizing: border-box;
-    width: 33.33333333%;
+    width: 40%;
     position: relative;
     float: left;
     padding-bottom: 20px;
     padding-right: 20px;
-}
+    padding-left: 1eem;
+}*/
 
 .col-left {
     padding-right: 70px;
@@ -130,6 +133,7 @@ body{
 
 .col-right {
     padding-left: 70px;
+    padding-right: -2em;
 }
 
 .col-middle {
@@ -141,3 +145,15 @@ body{
   color: #473247;
 
 }
+
+ul.listas{
+
+}
+
+img.img-avatar{
+  position: relative;
+  padding: 0.5em;
+
+}
+
+/**/
