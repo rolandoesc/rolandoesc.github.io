@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+body {
+  font-family: 'Questrial', sans-serif; }
+
+#wrapper {
+  background-color: #ECF8FF; }
+
+#home {
+  background-image: url(../images/home-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  color: white; }
+  #home div.row div#title #know-me {
+    color: white;
+    border-color: white;
+    border-radius: 24px !important; }
+
+#about {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+  #about h1 {
+    margin-bottom: 2.5%; }
+  #about p {
+    padding-top: 5%;
+    line-height: 2rem;
+    font-size: 1.25rem; }
+  #about #profile {
+    margin: auto;
+    min-height: 150px; }
+  #about #best-of {
+    margin-top: 10%;
+    border-radius: 24px;
+    font-size: 1.25rem; }
+
+#goals {
+  padding-top: 7.5%;
+  background-color: #B4DCED;
+  padding-bottom: 7.5%; }
+
+#projects {
+  background-color: #8BCAE8;
+  padding-top: 49%;
+  padding-bottom: 50%;
+  height: 50vh; }
+
+#next-steps {
+  background-color: #60B4DE;
+  padding-top: 10%;
+  padding-bottom: 10%; }
+  #next-steps .steps-text {
+    display: inline-block;
+    width: 79%; }
+  #next-steps .steps-icon {
+    display: inline-block;
+    width: 20%;
+    margin: 1.5% auto 2.5% auto; }
+
+#web-dev {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: #349ACC; }
+  #web-dev #webdev-button {
+    border-radius: 24px; }
+  #web-dev .dev-icons {
+    font-size: 5rem; }
+
+#footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #282828;
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */
