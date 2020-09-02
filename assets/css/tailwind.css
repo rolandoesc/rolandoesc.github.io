@@ -49,4 +49,7 @@ hr.divider {
   .title-list {
     @apply w-full flex-col;
   }
+  .half-side {
+    @apply w-full !important;
+  }
 }
