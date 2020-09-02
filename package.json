@@ -1,5 +1,6 @@
 {
-  "name": "rolandoesc.github.io2",
+  "name": "rolandoesc.github.io",
+  "author": "Rolando Escalona",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -22,6 +23,8 @@
     "@nuxtjs/tailwindcss": "^2.1.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.1"
   }
 }
