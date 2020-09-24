@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
-    <Intro />
+  <div class="landing-container">
+    
+    <IntroSection />
     <!-- <Logo /> -->
-    <About />
+    <!-- <About />
+    <PhotoGallery/> -->
   </div>
 </template>
 
@@ -11,8 +13,10 @@ export default {}
 </script>
 
 <style>
-.container {
-  @apply border my-0 mx-auto w-full flex-col min-h-screen flex justify-center text-center items-center;
+.landing-container {
+  @apply border my-0 w-full flex-col min-h-screen flex justify-center text-center items-center;
+  width: 100% !important;
+  background: url('~assets/images/holders/Background_Desktop.png');
 }
 
 </style>

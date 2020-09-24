@@ -1,4 +1,5 @@
-
+require('dotenv').config({ path: `.env` })//.${process.env.ENV_FILE}`
+const path = require('path')
 export default {
   /*
   ** Nuxt rendering mode
@@ -23,12 +24,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: "https://use.fontawesome.com/6d37adc781.js" } 
     ]
   },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/css/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -36,6 +41,7 @@ export default {
   */
   plugins: [
     { src: '~/plugins/breakpoints.js' },
+    // { src: '~/plugins/igphotos.js' },
   ],
   /*
   ** Auto import components
@@ -46,10 +52,12 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    ['@nuxtjs/dotenv', { filename: `.env` }], //.${process.env.NODE_ENV}
     // Doc: https://github.com/nuxt-community/eslint-module
     //'@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg'
   ],
   /*
   ** Nuxt.js modules
@@ -59,7 +67,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    
   ],
   /*
   ** Axios module configuration

@@ -1,0 +1,159 @@
+// @import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body {
+  @apply w-full;
+  font-family: 'Lato', sans-serif;
+}
+.section {
+  @apply min-h-screen flex mx-auto border-t border-b border-green-500 w-full;
+}
+.half-side {
+  @apply w-1/2 flex flex-col;
+}
+
+h1, button {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.column {
+  @apply flex-col w-full mx-auto;
+}
+
+// .centered {
+//   @apply my-auto border;
+// }
+
+.centered-block {
+  @apply flex justify-center text-center mx-auto;
+}
+
+// .title-list {
+//   @apply flex justify-between w-1/2;
+// }
+
+// hr.divider {
+//   @apply my-2 w-1/2 mx-auto;
+// }
+
+// .btn {
+//   @apply border mx-auto font-bold py-2 px-4;
+// }
+// .btn-transparent {
+//   @apply bg-transparent;
+// }
+
+// .btn:focus {
+//   @apply appearance-none outline-none; 
+// }
+// .photo-gallery {
+//   @apply grid gap-4 grid-cols-3 border w-full;
+// }
+
+// .spotify-playlists {
+//   @apply flex;
+//   iframe:first-child {
+//     @apply w-1/2 pl-2 pr-1;
+//   }
+//   iframe:last-child {
+//     @apply w-1/2 pr-2 pl-1;
+//   }
+// }
+
+// @screen sm {
+//   .photo-gallery {
+//     @apply grid-cols-2;
+//   }
+// }
+
+// @screen md {
+//   .photo-gallery {
+//     @apply grid-cols-3;
+//   }
+// }
+
+// @media (max-width: 639px) {
+//   .title-list {
+//     @apply w-full flex-col;
+//   }
+//   .half-side {
+//     @apply w-full;
+//   }
+//   .photo-gallery {
+//     @apply grid-cols-1;
+//   }
+//   .spotify-playlists {
+//     @apply flex-col;
+//     iframe:first-child {
+//       @apply w-full p-2;
+//     }
+//     iframe:last-child {
+//       @apply w-full p-2;
+//     }
+//   }
+// }
+
+.card-border {
+  border-radius: 40px;
+}
+.card {
+  @apply flex border border-black border-8 h-full w-full relative border-r-0 bg-white;
+  @extend .card-border;
+  .dots {
+    position: absolute;
+    right: 0;
+    bottom: 62.5%;
+    z-index: 2;
+    height: 6vh;
+    @apply border-r-8 border-dotted border-black bg-transparent;
+  }
+}
+
+.card::after {
+  position: absolute;
+  right: -1.5px;
+  top: -1px;
+  z-index: 1;
+  // height: 95px;
+  height: 14.5vh;
+  display: block;
+  width: 100px;
+  content: "";
+
+  @apply border-black;
+  border-right-width: 9px;
+  border-top-left-radius: 39px;
+  border-top-right-radius: 39px;
+
+}
+.card::before {
+  position: absolute;
+  right: -1.5px;
+  bottom: -1px;
+  z-index: 1;
+  // height: 252px;
+  height: 34.75vh;
+  display: block;
+  width: 100px;
+  content: "";
+
+  @apply  border-black;
+  border-right-width: 9px;
+  border-bottom-right-radius: 39px;
+  border-bottom-left-radius: 39px;
+
+}
+
+.over-card {
+  @apply absolute bg-transparent;
+  width: 87%;
+  height: 40%;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
+  box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
+  border-bottom-right-radius: 15px;
+  // top: 24vh;
+  top: 25%;
+  left: 0;
+  z-index: 2;
+}

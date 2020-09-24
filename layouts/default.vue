@@ -1,11 +1,17 @@
 <template>
-  <div>
+  <div id="landing">
     <Nuxt />
   </div>
 </template>
 
 <style>
-html {
+#landing {
+  @apply w-full;
+  /* * {
+    @apply w-full;
+  }  */
+}
+/* html {
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -58,5 +64,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+} */
 </style>
