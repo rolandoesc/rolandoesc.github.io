@@ -1,6 +1,6 @@
 <template>
   <section class="section column centered-block w-full pt-4" id="intro-section">
-    <div class="over-card"></div>
+    <OverCard />
     <Intro />
     <DownArrow />
   </section>

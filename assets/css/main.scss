@@ -11,7 +11,7 @@ body {
   @apply w-1/2 flex flex-col;
 }
 
-h1, button {
+h1, h4, button {
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -26,6 +26,7 @@ h1, button {
 .centered-block {
   @apply flex justify-center text-center mx-auto;
 }
+
 
 // .title-list {
 //   @apply flex justify-between w-1/2;
@@ -91,69 +92,3 @@ h1, button {
 //     }
 //   }
 // }
-
-.card-border {
-  border-radius: 40px;
-}
-.card {
-  @apply flex border border-black border-8 h-full w-full relative border-r-0 bg-white;
-  @extend .card-border;
-  .dots {
-    position: absolute;
-    right: 0;
-    bottom: 62.5%;
-    z-index: 2;
-    height: 6vh;
-    @apply border-r-8 border-dotted border-black bg-transparent;
-  }
-}
-
-.card::after {
-  position: absolute;
-  right: -1.5px;
-  top: -1px;
-  z-index: 1;
-  // height: 95px;
-  height: 14.5vh;
-  display: block;
-  width: 100px;
-  content: "";
-
-  @apply border-black;
-  border-right-width: 9px;
-  border-top-left-radius: 39px;
-  border-top-right-radius: 39px;
-
-}
-.card::before {
-  position: absolute;
-  right: -1.5px;
-  bottom: -1px;
-  z-index: 1;
-  // height: 252px;
-  height: 34.75vh;
-  display: block;
-  width: 100px;
-  content: "";
-
-  @apply  border-black;
-  border-right-width: 9px;
-  border-bottom-right-radius: 39px;
-  border-bottom-left-radius: 39px;
-
-}
-
-.over-card {
-  @apply absolute bg-transparent;
-  width: 87%;
-  height: 40%;
-  border-top-right-radius: 15px;
-  -webkit-box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
-  box-shadow: 14px 2px 21px 3px rgba(0, 0, 0, 0.41);
-  border-bottom-right-radius: 15px;
-  // top: 24vh;
-  top: 25%;
-  left: 0;
-  z-index: 2;
-}
