@@ -26,7 +26,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: "https://use.fontawesome.com/6d37adc781.js" } 
+      // { src: "https://use.fontawesome.com/6d37adc781.js" } 
     ]
   },
   /*
@@ -41,6 +41,7 @@ export default {
   */
   plugins: [
     { src: '~/plugins/breakpoints.js' },
+    "~/plugins/vee-validate.js",
     // { src: '~/plugins/igphotos.js' },
   ],
   /*
