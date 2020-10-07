@@ -1,7 +1,9 @@
 <template>
   <div class="landing-container">
     <IntroSection />
+    <PortfolioSection />
     <AboutMeSection/>
+    <DotsDivider/>
     <ContactMeSection />
   </div>
 </template>

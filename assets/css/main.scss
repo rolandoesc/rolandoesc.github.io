@@ -5,7 +5,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .section {
-  @apply min-h-screen flex mx-auto border-t border-b border-green-500 w-full;
+  @apply min-h-screen flex mx-auto w-full;
+  // border-t border-b border-green-500
 }
 .half-side {
   @apply w-1/2 flex flex-col;
@@ -13,6 +14,10 @@ body {
 
 h1, h4, button {
   font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+  @apply text-6xl;
 }
 
 .column {
