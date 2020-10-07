@@ -12,6 +12,6 @@ export default {};
 
 <style lang="scss" scoped>
 #about-me-experiences {
-  @apply w-1/2 flex flex-col text-left justify-around px-2;
+  @apply w-full flex flex-col text-left justify-around px-2;
 }
 </style>

@@ -1,29 +1,32 @@
 <template>
-  <!-- <section class="section column centered-block w-full pt-4 bg-green-400"> -->
-    <div id="intro">
-      <section-card>
-        <div id="intro-details">
-          <h1 id="title">Welcome!</h1>
-          <!-- <hr class="mx-auto" /> -->
-          <!-- <p>{{$breakpoints}}</p> -->
-          <h2>My name is Rolando Escalona,</h2>
-          <p>
-            I'm a Front End Developer who loves
-            <br />creating ideas into something real.
-          </p>
-          <div id="links">
-            <v-button class="mr-1 w-1/2">Portfolio</v-button>
-            <v-button class="ml-1 w-1/2">Contact</v-button>
-          </div>
-          <div id="icon-links">
-            <a :href="icon['link']" v-for="icon in iconDetails" :key="icon['name']" target="_blank" class="icon-index">
-              <img :src="icon['icon']" alt class="w-6" />
-            </a>
-          </div>
+  <div id="intro">
+    <section-card>
+      <div id="intro-details">
+        <h1 id="title">Welcome!</h1>
+
+        <h2>My name is Rolando Escalona,</h2>
+        <p>
+          I'm a Front End Developer who loves
+          <br />creating ideas into something real.
+        </p>
+        <div id="button-links">
+          <v-button>Portfolio</v-button>
+          <v-button>Contact</v-button>
         </div>
-      </section-card>
-    </div>
-  <!-- </section> -->
+        <div id="icon-links">
+          <a
+            :href="icon['link']"
+            v-for="icon in iconDetails"
+            :key="icon['name']"
+            target="_blank"
+            class="icon-index"
+          >
+            <img :src="icon['icon']" alt class="w-6" />
+          </a>
+        </div>
+      </div>
+    </section-card>
+  </div>
 </template>
 <script>
 export default {
@@ -70,8 +73,31 @@ export default {
   text-decoration: underline;
   font-size: 6rem;
 }
-#links {
+
+@media screen and (max-width: 679px) {
+  #title {
+    font-size: 3rem;
+  }
+  #button-links {
+    @apply flex-col w-full justify-between h-20;
+    *:first-child {
+      width: 100% !important;
+      margin: auto !important;
+    }
+    *:last-child {
+      width: 100% !important;
+      margin: auto !important;
+    }
+  }
+}
+#button-links {
   @apply flex justify-center my-4;
+  *:first-child {
+    @apply mr-1 w-1/2;
+  }
+  *:last-child {
+    @apply ml-1 w-1/2;
+  }
 }
 #icon-links {
   @apply flex justify-center;

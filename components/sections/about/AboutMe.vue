@@ -2,8 +2,7 @@
   <div id="about-me">
     <section-card rotate large-card>
       <div id="about-me-details">
-        <AboutMeBio />
-        <AboutMeExperiencesDetails />
+        <slot />
       </div>
     </section-card>
   </div>
@@ -15,7 +14,7 @@ export default {};
 
 <style lang="scss" scoped>
 #about-me {
-  @apply w-5/6 flex-col mb-auto mt-20 mx-auto;
+  @apply w-5/6 flex-col mb-auto mt-20 mx-auto relative;
   height: 75vh;
 }
 
