@@ -1,11 +1,11 @@
 import emailjs from 'emailjs-com';
-emailjs.init(process.env.USER_ID);
+emailjs.init('user_g5Kz08PFTy06sYwpBBzbh');
 
 export const sendEmail = async (e) => {
   try {
-    console.log(process.env.TEMPLATE_ID, e, process.env.USER_ID)
+    console.log('rolando_portfolio', e, 'user_g5Kz08PFTy06sYwpBBzbh')
     const { status } = await emailjs
-      .sendForm('portfolio_website', process.env.TEMPLATE_ID, e, process.env.USER_ID)
+      .sendForm('portfolio_website', 'rolando_portfolio', e, 'user_g5Kz08PFTy06sYwpBBzbh')
     return status
   } catch ({ status }) {
     return status
