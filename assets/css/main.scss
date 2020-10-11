@@ -1,98 +1,109 @@
-@import url(https://fonts.googleapis.com/css?family=Questrial);
+// @import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body {
-    font-family: 'Questrial', sans-serif;
-
+  @apply w-full;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section {
+  @apply min-h-screen flex mx-auto w-full;
+  scroll-behavior: smooth;
+  // border-t border-b border-green-500
+}
+.half-side {
+  @apply w-1/2 flex flex-col;
 }
 
-#wrapper {
-    background-color: #ECF8FF;
+h1, h4, button {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-#home {
-
-    background-image: url(../images/home-bg-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    color: white;
-    div.row {
-        div#title {
-            #know-me {
-                color: white;
-                border-color: white;
-                border-radius: 24px !important;
-            }
-        }
-    }
+h1 {
+  @apply text-6xl;
 }
 
-#about {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    h1 {
-        margin-bottom: 2.5%;
-    }
-    p {
-        padding-top: 5%;
-        line-height: 2rem;
-        font-size: 1.25rem;
-    }
-    #profile {
-        margin: auto;
-        min-height: 150px;
-    }
-    #best-of {
-        margin-top: 10%;
-        border-radius: 24px;
-        font-size: 1.25rem;
-    }
+@screen xs {
+  h1 {
+    @apply text-5xl;
+  }
 }
 
-#goals {
-    padding-top: 7.5%;
-    background-color: #B4DCED;
-    padding-bottom: 7.5%;
+.column {
+  @apply flex-col w-full mx-auto;
 }
 
-#projects {
-    background-color: #8BCAE8;
-    padding-top: 49%;
-    padding-bottom: 50%;
-    height: 50vh;
+// .centered {
+//   @apply my-auto border;
+// }
+
+.centered-block {
+  @apply flex justify-center text-center mx-auto;
 }
 
-#next-steps {
-    background-color: #60B4DE;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    .steps-text {
-        display: inline-block;
-        width: 79%;
-    }
-    .steps-icon {
-        display: inline-block;
-        width: 20%;
-        margin: 1.5% auto 2.5% auto;
-    }
-}
 
-#web-dev {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    background-color: #349ACC;
-    #webdev-button {
-        border-radius: 24px;
-    }
-    .dev-icons {
-        font-size: 5rem;
-    }
-}
+// .title-list {
+//   @apply flex justify-between w-1/2;
+// }
 
-#footer {
-  padding-top: 5%;
-  padding-bottom: 5%;
-    background-color: #282828;
-    color:white;
+// hr.divider {
+//   @apply my-2 w-1/2 mx-auto;
+// }
 
-}
+// .btn {
+//   @apply border mx-auto font-bold py-2 px-4;
+// }
+// .btn-transparent {
+//   @apply bg-transparent;
+// }
+
+// .btn:focus {
+//   @apply appearance-none outline-none; 
+// }
+// .photo-gallery {
+//   @apply grid gap-4 grid-cols-3 border w-full;
+// }
+
+// .spotify-playlists {
+//   @apply flex;
+//   iframe:first-child {
+//     @apply w-1/2 pl-2 pr-1;
+//   }
+//   iframe:last-child {
+//     @apply w-1/2 pr-2 pl-1;
+//   }
+// }
+
+// @screen sm {
+//   .photo-gallery {
+//     @apply grid-cols-2;
+//   }
+// }
+
+// @screen md {
+//   .photo-gallery {
+//     @apply grid-cols-3;
+//   }
+// }
+
+// @media (max-width: 639px) {
+//   .title-list {
+//     @apply w-full flex-col;
+//   }
+//   .half-side {
+//     @apply w-full;
+//   }
+//   .photo-gallery {
+//     @apply grid-cols-1;
+//   }
+//   .spotify-playlists {
+//     @apply flex-col;
+//     iframe:first-child {
+//       @apply w-full p-2;
+//     }
+//     iframe:last-child {
+//       @apply w-full p-2;
+//     }
+//   }
+// }
