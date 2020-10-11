@@ -88,7 +88,7 @@ hr.portfolio-card__divider {
 }
 @screen md {
   .portfolio-card {
-    height: 40vh;
+    height: 55vh;
     // width: 22vw;
   }
 }

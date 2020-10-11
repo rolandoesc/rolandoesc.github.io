@@ -3,11 +3,14 @@
     <IntroSection />
     <PortfolioSection />
     <AboutMeSection/>
-    <DotsDivider/>
+    <DotsDivider id="contact-divider"/>
     <ContactMeSection />
   </div>
 </template>
 <style>
+#contact-divider {
+  @apply my-8;
+}
 .landing-container {
   @apply border my-0 w-full flex-col min-h-screen flex justify-center text-center items-center relative;
   background: url('~assets/images/holders/Background_Desktop.png');

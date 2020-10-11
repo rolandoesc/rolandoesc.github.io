@@ -26,6 +26,14 @@ export default {
   @apply grid gap-12 grid-cols-3;
 }
 
+@screen lg {
+  .portfolio-list {
+    @apply w-4/5;
+  }
+  // .portfolio-list__grid {
+  //   @apply grid-cols-2;
+  // }
+}
 @screen md {
   .portfolio-list__grid {
     @apply grid-cols-2;
@@ -33,7 +41,7 @@ export default {
 }
 @screen sm {
   .portfolio-list__grid {
-    @apply grid-cols-1;
+    @apply grid-cols-1 px-8;
   }
 }
 @screen xs {

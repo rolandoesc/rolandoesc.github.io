@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="contact-section">
     <h1>
       Let's talk and make magic happen!
     </h1>
@@ -14,7 +14,5 @@
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  @apply text-6xl;
-}
+
 </style>

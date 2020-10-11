@@ -67,4 +67,9 @@
     }
   }
 }
+@screen xs {
+  .experiences-list {
+    @apply px-0;
+  }
+}
 </style>

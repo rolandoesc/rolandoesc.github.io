@@ -10,8 +10,8 @@
           <br />creating ideas into something real.
         </p>
         <div id="button-links">
-          <v-button>Portfolio</v-button>
-          <v-button>Contact</v-button>
+          <v-button jump-to="portfolio-section">Portfolio</v-button>
+          <v-button jump-to="contact-section">Contact</v-button>
         </div>
         <div id="icon-links">
           <a
@@ -101,10 +101,12 @@ export default {
 }
 #icon-links {
   @apply flex justify-center;
-  a {
+  a.icon-index {
     @apply mx-4;
   }
 }
+
+
 // .venezuelan {
 //   background: -webkit-linear-gradient(0deg,
 //     #ffcc00,

@@ -1,6 +1,5 @@
 <template>
   <section class="section column centered-block w-full pt-4 relative" id="about-me">
-    <!-- <template v-if=""></template> -->
     <template v-if="smallView">
       <div class="relative">
       <OverCard cover-card />

@@ -4,8 +4,12 @@ body {
   @apply w-full;
   font-family: 'Lato', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .section {
   @apply min-h-screen flex mx-auto w-full;
+  scroll-behavior: smooth;
   // border-t border-b border-green-500
 }
 .half-side {
@@ -18,6 +22,12 @@ h1, h4, button {
 
 h1 {
   @apply text-6xl;
+}
+
+@screen xs {
+  h1 {
+    @apply text-5xl;
+  }
 }
 
 .column {

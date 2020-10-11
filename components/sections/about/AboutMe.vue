@@ -15,7 +15,8 @@ export default {};
 <style lang="scss" scoped>
 #about-me {
   @apply w-5/6 flex-col mb-auto mt-20 mx-auto relative;
-  height: 75vh;
+  height: 80vh;
+  max-height: 90vh;
 }
 
 #about-me-details {
