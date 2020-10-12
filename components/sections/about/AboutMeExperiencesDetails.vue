@@ -14,4 +14,9 @@ export default {};
 #about-me-experiences {
   @apply w-full flex flex-col text-left justify-around px-2;
 }
+@media screen and (max-width: 679px) {
+  #about-me-experiences {
+    @apply px-0;
+  }
+}
 </style>

@@ -14,5 +14,11 @@
 </script>
 
 <style lang="scss" scoped>
-
+@media screen and (max-width: 679px) {
+  #contact-section {
+    h1 {
+      @apply text-left pl-4;
+    }
+  }
+}
 </style>

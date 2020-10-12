@@ -19,4 +19,9 @@ div.dots-divider {
     background-color: #0525A2;
   }
 }
+@media screen and (max-width: 679px) {
+  div.dots-divider {
+    @apply justify-start;
+  }
+}
 </style>

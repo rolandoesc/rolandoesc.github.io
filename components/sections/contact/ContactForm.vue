@@ -79,4 +79,15 @@ export default {
     @apply pb-2;
   }
 }
+@media screen and (max-width: 679px) {
+  .form {
+    #contact-details {
+      @apply flex-col w-4/5 pl-4;
+    }
+    #contact-message {
+      @apply flex-col w-4/5 pl-4;
+    }
+
+  }
+}
 </style>

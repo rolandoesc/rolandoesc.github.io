@@ -62,4 +62,6 @@ button {
 .btn-disabled {
   @apply bg-gray-600 cursor-not-allowed;
 }
+
+
 </style>

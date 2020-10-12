@@ -1,6 +1,6 @@
 <template>
   <div id="intro">
-    <section-card>
+    <!-- <MobileSectionCard>
       <div id="intro-details">
         <h1 id="title">Welcome!</h1>
 
@@ -25,11 +25,40 @@
           </a>
         </div>
       </div>
-    </section-card>
+    </MobileSectionCard> -->
+    <template v-if="true">
+      <section-card has-dots :dots-bottom="isSmall" top-left>
+        <div id="intro-details">
+          <h1 id="title">Welcome!</h1>
+
+          <h2>My name is Rolando Escalona,</h2>
+          <p>
+            I'm a Front End Developer who loves
+            <br />creating ideas into something real.
+          </p>
+          <div id="button-links">
+            <v-button jump-to="portfolio-section">Portfolio</v-button>
+            <v-button jump-to="contact-section">Contact</v-button>
+          </div>
+          <div id="icon-links">
+            <a
+              :href="icon['link']"
+              v-for="icon in iconDetails"
+              :key="icon['name']"
+              target="_blank"
+              class="icon-index"
+            >
+              <img :src="icon['icon']" alt class="w-6" />
+            </a>
+          </div>
+        </div>
+      </section-card>
+    </template>
   </div>
 </template>
 <script>
 export default {
+  props: ["isSmall"],
   data() {
     return {
       iconDetails: [
@@ -75,18 +104,41 @@ export default {
 }
 
 @media screen and (max-width: 679px) {
+  #intro {
+    @apply w-full flex-col mb-auto -mt-4 mr-auto bg-transparent relative;
+    height: 90vh;
+  }
+  #intro-details {
+    @apply h-full flex flex-col w-3/4  justify-center relative text-left;
+    z-index: 3;
+    h2 {
+      @apply font-bold;
+    }
+    p {
+      @apply font-thin;
+    }
+  }
   #title {
-    font-size: 3rem;
+    font-size: 4.5rem;
+    margin-left: 0;
+    text-decoration: none;
   }
   #button-links {
-    @apply flex-col w-full justify-between h-20;
+    @apply flex-col w-4/5 justify-between h-24;
     *:first-child {
+      @apply my-4;
       width: 100% !important;
       margin: auto !important;
     }
     *:last-child {
       width: 100% !important;
       margin: auto !important;
+    }
+  }
+  #icon-links {
+    @apply w-4/5 flex justify-start text-left;
+    a.icon-index {
+      @apply mx-4;
     }
   }
 }
@@ -105,15 +157,4 @@ export default {
     @apply mx-4;
   }
 }
-
-
-// .venezuelan {
-//   background: -webkit-linear-gradient(0deg,
-//     #ffcc00,
-//     #00247d,
-//     #cf142b
-//   );
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
 </style>

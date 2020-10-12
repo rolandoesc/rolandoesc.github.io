@@ -26,7 +26,7 @@ export default {};
 }
 @screen xs {
   #about-me-bio {
-    @apply overflow-y-auto pt-12;
+    @apply pt-10;
   }
   #download-cv {
     @apply pt-2 text-center;

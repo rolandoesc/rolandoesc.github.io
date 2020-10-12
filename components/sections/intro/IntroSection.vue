@@ -1,13 +1,15 @@
 <template>
   <section class="section column centered-block w-full pt-4" id="intro-section">
-    <OverCard />
-    <Intro />
-    <DownArrow />
+    <OverCard v-if="!isSmall" />
+    <Intro :is-small="isSmall" />
+    <DownArrow v-if="!isSmall" />
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["isSmall"]
+};
 </script>
 
 <style lang="scss" scoped>

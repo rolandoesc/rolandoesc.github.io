@@ -2,23 +2,19 @@
   <section class="section column centered-block w-full pt-4 relative" id="about-me">
     <template v-if="smallView">
       <div class="relative">
-      <OverCard cover-card />
-      <AboutMe>
-        <AboutMeBio />
-      </AboutMe>
-
+        <AboutMe right :small-view="false">
+          <AboutMeBio />
+        </AboutMe>
       </div>
       <div class="relative">
-      <OverCard cover-card right-side />
-      <AboutMe>
-        <AboutMeExperiencesDetails />
-      </AboutMe>
-
+        <AboutMe left :small-view="false">
+          <AboutMeExperiencesDetails />
+        </AboutMe>
       </div>
     </template>
     <template v-else>
       <OverCard cover-card right-side />
-      <AboutMe>
+      <AboutMe small-view>
         <AboutMeBio />
         <AboutMeExperiencesDetails />
       </AboutMe>
@@ -40,8 +36,7 @@ export default {
 <style lang="scss" scoped>
 @screen sm {
   .section#about-me {
-    @apply bg-red-400;
-    height: 175vh;
+    height: auto;
   }
 }
 </style>

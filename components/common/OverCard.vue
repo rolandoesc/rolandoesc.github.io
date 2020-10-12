@@ -28,6 +28,11 @@
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 679px) {
+  .over-card {
+    display: none !important;
+  }
+}
 .over-card {
   @apply absolute bg-transparent;
   width: 87%;
