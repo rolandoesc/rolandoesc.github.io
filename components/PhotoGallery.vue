@@ -3,7 +3,7 @@
     <div class="flex flex-col">
 
     <p class="text-xl text-justify px-2 my-4">
-      One of the great joys of my life has been to become an amateur photographer, I'd like to share you some of my favourite photographies I've taken. You can also check out my <b id="instagram"><a href="https://instagram.com/rolandoesc" target="_blank">Instagram</a></b>
+      One of the great joys of my life has been to become an amateur photographer, I'd like to share you some of my favourite photographies I have taken. You can also check out my <b id="instagram"><a href="https://instagram.com/rolandoesc" target="_blank">Instagram</a></b>
     </p>
     <div class="flex">
       <div class="photo-gallery">
