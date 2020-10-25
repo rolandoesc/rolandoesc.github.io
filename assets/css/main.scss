@@ -12,9 +12,6 @@ html {
   scroll-behavior: smooth;
   // border-t border-b border-green-500
 }
-.half-side {
-  @apply w-1/2 flex flex-col;
-}
 
 h1, h4, button {
   font-family: 'Bebas Neue', sans-serif;
