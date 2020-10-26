@@ -83,6 +83,15 @@ export default {
   .form {
     #contact-details {
       @apply flex-col w-4/5 pl-4;
+      * {
+        @apply px-0; 
+      }
+      *:first-child {
+        @apply px-0;
+      }
+      *:last-child {
+        @apply px-0;
+      }
     }
     #contact-message {
       @apply flex-col w-4/5 pl-4;

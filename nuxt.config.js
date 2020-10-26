@@ -5,7 +5,7 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'spa',
+  ssr: false,
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -41,6 +41,7 @@ export default {
   plugins: [
     { src: '~/plugins/breakpoints.js' },
     "~/plugins/vee-validate.js",
+    { src: '~plugins/ga.js' }
     // { src: '~/plugins/igphotos.js' },
   ],
   /*
@@ -52,7 +53,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    ['@nuxtjs/dotenv', { filename: `.env` }], //.${process.env.NODE_ENV}
+    // ['@nuxtjs/dotenv', { filename: `.env` }], //.${process.env.NODE_ENV}
     // Doc: https://github.com/nuxt-community/eslint-module
     //'@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss

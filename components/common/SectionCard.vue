@@ -79,7 +79,7 @@ export default {
   @apply transform rotate-90;
   position: absolute;
   right: 100px;
-  bottom: -43px;
+  bottom: -44px;
   z-index: 1;
 }
 .rotate,
