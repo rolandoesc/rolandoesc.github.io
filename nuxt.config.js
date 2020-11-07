@@ -20,7 +20,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: `Welcome to Rolando "Chamo" Escalona's Portfolio, Front End Developer` }
+      { hid: 'description', name: 'description', content: `Welcome to Rolando "Chamo" Escalona's Portfolio, Front End Developer` },
+      { hid: 'og:description', name: 'description', content: `Welcome to Rolando "Chamo" Escalona's Portfolio, Front End Developer` },
+      { hid: 'og:site_name', name: 'site_name', content: `https://chamo.tech` },
+      { hid: 'og:title', name: 'title', content: `"Chamo" Escalona's Portfolio` },
+      { hid: 'apple-mobile-web-app-title', name: 'appe-mobile-web-app-title', content: `"Chamo" Escalona's Portfolio` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -66,7 +70,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     
