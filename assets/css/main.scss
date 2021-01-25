@@ -12,9 +12,6 @@ html {
   scroll-behavior: smooth;
   // border-t border-b border-green-500
 }
-.half-side {
-  @apply w-1/2 flex flex-col;
-}
 
 h1, h4, button {
   font-family: 'Bebas Neue', sans-serif;
@@ -22,6 +19,34 @@ h1, h4, button {
 
 h1 {
   @apply text-6xl;
+}
+
+.footer {
+  scroll-behavior: smooth;
+  @apply border-t-4 h-12 flex w-4/5 mx-auto border-black justify-between py-4 mb-4;
+}
+
+.icon-links {
+  @apply flex justify-center;
+  a.icon-index {
+    @apply mx-4;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .footer {
+    @apply flex-col text-left;
+    width: 90%;
+    .icon-links {
+      @apply justify-start -ml-4 my-4 pb-2;
+    }
+  }
+  .icon-links {
+    @apply w-4/5 flex justify-start text-left;
+    a.icon-index {
+      @apply mx-4;
+    }
+  }
 }
 
 @screen xs {

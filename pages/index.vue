@@ -5,6 +5,7 @@
     <AboutMeSection />
     <DotsDivider id="contact-divider" />
     <ContactMeSection />
+    <Footer/>
   </div>
 </template>
 <script>

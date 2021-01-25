@@ -7,7 +7,6 @@ export default {
   props: ["topLeft", "left", "right"],
   computed: {
     orientation() {
-      console.log(this.right)
       return this.right ? "over-right" : "over-left"
     }
   }

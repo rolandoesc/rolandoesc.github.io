@@ -83,6 +83,17 @@ a {
     }
   }
 }
+@screen xl {
+  .experiences-list {
+  @apply py-6;
+  li.experience {
+    @apply flex flex-col my-2 list-disc py-2;
+    h3 {
+      @apply font-bold italic;
+    }
+  }
+}
+}
 @screen xs {
   .experiences-list {
     @apply px-0;
