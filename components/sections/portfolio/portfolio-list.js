@@ -17,8 +17,11 @@ const PORTFOLIOLIST = [
     description: "Tool to closely monitor actions of presidential candidates in Mexico (2018)",
     link: "https://seguimiento-electoral-ipp.firebaseapp.com/#/"
   },
+  {
+    name: "Brawl Stars Player Searcher",
+    image: require("~/assets/images/projects/brawlstars.webp"),
+    description: "Small tool to check up details of players from Brawl Stars (Mobile Game) - Status: Work In Progress",
+    link: "https://brawlstars.chamo.tech"
+  },
 ]
-/*
-Herramienta para seguir de cerca acciones de candidatos presidenciales en México (2018)
-*/
 export default PORTFOLIOLIST

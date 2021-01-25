@@ -2,7 +2,7 @@
   <div class="skills">
     <div class="skill" v-for="(skill, index) in skillsIcons" :key="index">
 
-      <img :src="skill['icon']" :alt="skill['name']">
+      <img :src="skill['icon']" :alt="skill['name']" height="43">
       <span>{{skill['name']}}</span>
     </div>
   </div>
@@ -33,6 +33,11 @@
           icon: require("~/assets/vuejs-brands.svg"),
           // link: "https://linkedin.com/in/rolandoesc/",
         },
+        {
+          name: "React.JS",
+          icon: require("~/assets/react-brands.svg"),
+          // link: "https://linkedin.com/in/rolandoesc/",
+        },
       ],
       }
     }
@@ -46,9 +51,10 @@
     @apply flex-col text-center mx-auto;
     img {
       @apply w-8 mx-auto;
+      height: 43px;
     }
     span {
-      @apply text-sm;
+      @apply text-sm align-bottom;
     }
   }
 }
