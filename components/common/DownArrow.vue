@@ -1,11 +1,6 @@
 <template>
-
-  <div class="arrow"></div>
+  <a class="arrow" href="#portfolio-section"></a>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss" scoped>
 .arrow {

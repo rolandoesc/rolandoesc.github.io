@@ -17,11 +17,18 @@
       return {
         experiences: [
           {
+            role: "Front End Developer",
+            company: "Kinedu",
+            companyURL: "https://kinedu.com",
+            location: "Remote - Mexico",
+            duration: "March 2021 — Current Role"
+          },
+          {
             role: "Lead Front End Developer",
             company: "Aiwifi Insights",
             companyURL: "https://aiwifi.io",
             location: "Mexico City",
-            duration: "Sept 2019 — Current Role"
+            duration: "Sept 2019 — March 2021"
           },
           {
             role: "Front End Developer",
@@ -88,6 +95,7 @@ a {
   @apply py-6;
   li.experience {
     @apply flex flex-col my-2 list-disc py-2;
+    user-select: none;
     h3 {
       @apply font-bold italic;
     }

@@ -1,10 +1,11 @@
 const PORTFOLIOLIST = [
   {
-    name: "Aiwifi",
-    image: require("~/assets/images/projects/aiwifiDashboard.webp"),
-    description: "Dashboard used to create HotSpot Campaigns, prioritize views by the user and analyze results from their connections",
-    link: "https://aiwifi.io"
+    name: "IPP - Electoral Monitoring",
+    image: require("~/assets/images/projects/seguimientoIPP.webp"),
+    description: "Tool to closely monitor actions of presidential candidates in Mexico (2018)",
+    link: "https://seguimiento-electoral-ipp.firebaseapp.com/#/"
   },
+  
   {
     name: "Yeeko",
     image: require("~/assets/images/projects/yeekoDashboard.webp"),
@@ -12,10 +13,10 @@ const PORTFOLIOLIST = [
     link: "https://yeeko.org/"
   },
   {
-    name: "IPP - Electoral Monitoring",
-    image: require("~/assets/images/projects/seguimientoIPP.webp"),
-    description: "Tool to closely monitor actions of presidential candidates in Mexico (2018)",
-    link: "https://seguimiento-electoral-ipp.firebaseapp.com/#/"
+    name: "Aiwifi",
+    image: require("~/assets/images/projects/aiwifiDashboard.webp"),
+    description: "Dashboard used to create HotSpot Campaigns, prioritize views by the user and analyze results from their connections",
+    link: "https://aiwifi.io"
   },
   {
     name: "Brawl Stars Player Searcher",

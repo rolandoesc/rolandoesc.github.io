@@ -4,7 +4,10 @@
       <div id="intro-details">
         <h1 id="title">Welcome!</h1>
 
-        <h2>My name is Rolando Escalona,</h2>
+        <h2>My name is Rolando Escalona
+        <br>
+        <i>(but you can call me Chamo)</i>,
+        </h2>
         <p>
           I am a Front End Developer who loves
           <br />turning ideas into something real.

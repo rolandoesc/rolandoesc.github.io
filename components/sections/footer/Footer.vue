@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <p>
-      2020. All Rights Reserved
+      2021. All Rights Reserved
     </p>
   </footer>
 </template>
