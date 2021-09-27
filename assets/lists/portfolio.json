@@ -1,0 +1,25 @@
+{
+	"list": [
+		{
+			"name": "IPP - Electoral Monitoring",
+			"image": "/seguimientoIPP.webp",
+			"description": "Tool to closely monitor actions of presidential candidates in Mexico (2018)",
+			"link": "https://seguimiento-electoral-ipp.firebaseapp.com/#/",
+			"alt": "Electoral Monitoring Dashboard Preview"
+		},
+		{
+			"name": "Yeeko",
+			"image": "/yeekoDashboard.webp",
+			"description": "Dashboard used to create questions that allow them to be discussed by different groups of people on Facebook Pages",
+			"link": "https://yeeko.org/",
+			"alt": "Yeeko Landpage Preview"
+		},
+		{
+			"name": "Aiwifi",
+			"image": "/aiwifiDashboard.webp",
+			"description": "Dashboard used to create HotSpot Campaigns, prioritize views by the user and analyze results from their connections",
+			"link": "https://aiwifi.io",
+			"alt": "Aiwifi Dashboard Preview"
+		}
+	]
+}

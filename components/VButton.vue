@@ -1,5 +1,10 @@
 <template>
-  <button @click="emitClick" :class="{'btn-disabled': disabled}" :disabled="disabled">
+  <button
+    @click="emitClick"
+    class="btn"
+    :class="buttonDisabledClass"
+    :disabled="disabled"
+  >
     <slot />
   </button>
 </template>
@@ -24,11 +29,9 @@ export default {
   },
   methods: {
     emitClick() {
-      this.jumpTo.length
-        ? this.jump(this.jumpTo)
-        : this.openSite.length
-          ? this.openNewSite(this.openSite)
-          : this.$emit("click");
+      if (this.jumpTo.length) this.jump(this.jumpTo);
+      else if (this.openSite.length) this.openNewSite(this.openSite);
+      else this.$emit("click");
     },
     jump(jumpTo) {
       const url = location.href;
@@ -36,8 +39,8 @@ export default {
       history.replaceState(null, null, url);
     },
     openNewSite(site) {
-      window.open(site)
-    }
+      window.open(site);
+    },
   },
   computed: {
     elementTag() {
@@ -48,20 +51,9 @@ export default {
         ? { href: `#${this.jumpTo}` }
         : { onclick: this.emitClick };
     },
+    buttonDisabledClass() {
+      return this.disabled ? "btn-disabled" : null;
+    },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-button {
-  @apply uppercase bg-black text-white px-2 font-light text-2xl;
-}
-.btn-secondary {
-  background-color: #0525a2;
-}
-.btn-disabled {
-  @apply bg-gray-600 cursor-not-allowed;
-}
-
-
-</style>

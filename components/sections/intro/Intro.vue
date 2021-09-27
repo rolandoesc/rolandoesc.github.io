@@ -3,10 +3,10 @@
     <section-card has-dots :dots-bottom="isSmall" top-left>
       <div id="intro-details">
         <h1 id="title">Welcome!</h1>
-
-        <h2>My name is Rolando Escalona
-        <br>
-        <i>(but you can call me Chamo)</i>,
+        <h2>
+          My name is Rolando Escalona
+          <br />
+          <i>(but you can call me Chamo)</i>,
         </h2>
         <p>
           I am a Front End Developer who loves
@@ -16,7 +16,7 @@
           <v-button jump-to="portfolio-section">Portfolio</v-button>
           <v-button jump-to="contact-section">Contact</v-button>
         </div>
-        <IconLinks/>
+        <NetworkIconsList />
       </div>
     </section-card>
   </div>
@@ -30,6 +30,7 @@ export default {
 #intro {
   @apply w-2/3 flex-col mb-auto mt-20 mx-auto;
   height: 60vh;
+  user-select: none;
 }
 #intro-details {
   @apply h-full flex flex-col w-1/2 mx-auto justify-center relative;

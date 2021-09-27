@@ -1,5 +1,8 @@
 // @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root {
+  --primary-blue: #0525a2;
+}
 body {
   @apply w-full;
   font-family: 'Lato', sans-serif;
@@ -10,10 +13,9 @@ html {
 .section {
   @apply min-h-screen flex mx-auto w-full;
   scroll-behavior: smooth;
-  // border-t border-b border-green-500
 }
 
-h1, h4, button {
+h1, h4, button, a.btn {
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -26,10 +28,13 @@ h1 {
   @apply border-t-4 h-12 flex w-4/5 mx-auto border-black justify-between py-4 mb-4;
 }
 
-.icon-links {
+.network-icons-list {
   @apply flex justify-center;
-  a.icon-index {
+  .network-icon {
     @apply mx-4;
+    img {
+      @apply w-6;
+    }
   }
 }
 
@@ -37,14 +42,17 @@ h1 {
   .footer {
     @apply flex-col text-left;
     width: 90%;
-    .icon-links {
+    .network-icons-list {
       @apply justify-start -ml-4 my-4 pb-2;
     }
   }
-  .icon-links {
+  .network-icons-list {
     @apply w-4/5 flex justify-start text-left;
-    a.icon-index {
-      @apply mx-4;
+    .network-icon {
+      @apply mx-2;
+    }
+    .network-icon:first-child {
+      @apply ml-0;
     }
   }
 }
@@ -59,76 +67,46 @@ h1 {
   @apply flex-col w-full mx-auto;
 }
 
-// .centered {
-//   @apply my-auto border;
-// }
 
 .centered-block {
   @apply flex justify-center text-center mx-auto;
 }
 
+.section-details {
+  @extend .section; 
+  @extend .column;
+  @extend .centered-block;
+  @apply w-full pt-4 relative;
+}
 
-// .title-list {
-//   @apply flex justify-between w-1/2;
-// }
+.glow {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #0525a2, #0525a2 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  &:hover {
+    background-position: 0 100%;
+  }
+}
 
-// hr.divider {
-//   @apply my-2 w-1/2 mx-auto;
-// }
+.btn {
+  @apply uppercase bg-black text-white px-2 font-light text-2xl;
+}
 
-// .btn {
-//   @apply border mx-auto font-bold py-2 px-4;
-// }
-// .btn-transparent {
-//   @apply bg-transparent;
-// }
+.btn-secondary {
+  background-color: var(--primary-blue);
+}
 
-// .btn:focus {
-//   @apply appearance-none outline-none; 
-// }
-// .photo-gallery {
-//   @apply grid gap-4 grid-cols-3 border w-full;
-// }
+.btn-disabled {
+  @apply bg-gray-600 cursor-not-allowed;
+}
 
-// .spotify-playlists {
-//   @apply flex;
-//   iframe:first-child {
-//     @apply w-1/2 pl-2 pr-1;
-//   }
-//   iframe:last-child {
-//     @apply w-1/2 pr-2 pl-1;
-//   }
-// }
-
-// @screen sm {
-//   .photo-gallery {
-//     @apply grid-cols-2;
-//   }
-// }
-
-// @screen md {
-//   .photo-gallery {
-//     @apply grid-cols-3;
-//   }
-// }
-
-// @media (max-width: 639px) {
-//   .title-list {
-//     @apply w-full flex-col;
-//   }
-//   .half-side {
-//     @apply w-full;
-//   }
-//   .photo-gallery {
-//     @apply grid-cols-1;
-//   }
-//   .spotify-playlists {
-//     @apply flex-col;
-//     iframe:first-child {
-//       @apply w-full p-2;
-//     }
-//     iframe:last-child {
-//       @apply w-full p-2;
-//     }
-//   }
-// }
+.primary-color {
+  color: var(--primary-blue);
+}

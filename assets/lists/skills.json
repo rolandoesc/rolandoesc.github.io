@@ -1,0 +1,24 @@
+{
+	"list": [
+		{
+			"name": "HTML",
+			"icon": "html5-brands"
+		},
+		{
+			"name": "CSS",
+			"icon": "css3-alt-brands"
+		},
+		{
+			"name": "JavaScript",
+			"icon": "js-brands"
+		},
+		{
+			"name": "Vue.JS",
+			"icon": "vuejs-brands"
+		},
+		{
+			"name": "React.JS",
+			"icon": "react-brands"
+		}
+	]
+}

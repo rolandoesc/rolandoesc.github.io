@@ -1,11 +1,11 @@
 <template>
-  <div class="portfolio-card">
+  <li class="portfolio-card">
     <div class="portfolio-card__over-card"></div>
     <div class="portfolio-card__image">
       <a :href="portfolioDetails.link" target="_blank">
         <img
-          :src="portfolioDetails.image"
-          alt
+          :src="image"
+          :alt="portfolioDetails.alt"
           class="image"
         />
       </a>
@@ -13,13 +13,13 @@
     <div class="portfolio-card__info">
       <hr class="portfolio-card__divider" />
       <h2 class="portfolio-card__project__name">
-        <a :href="portfolioDetails.link" target="_blank">{{portfolioDetails.name}}</a>
+        <a :href="portfolioDetails.link" target="_blank" class="glow">{{portfolioDetails.name}}</a>
       </h2>
       <p
         class="portfolio-card__project__description"
       >{{portfolioDetails.description}}</p>
     </div>
-  </div>
+  </li>
 </template>
 
 <script>
@@ -29,6 +29,11 @@ export default {
       type: Object,
       required: true
     }
+  },
+  computed: {
+    image() {
+      return require(`~/assets/images/projects${this.portfolioDetails.image}`);
+    }
   }
 };
 </script>
@@ -37,7 +42,6 @@ export default {
 .portfolio-card {
   @apply relative w-full flex flex-col bg-white;
   height: 60vh;
-  // width: 18vw;
   border: solid black 4pt;
   border-radius: 20px;
   z-index: 0;
@@ -89,19 +93,16 @@ hr.portfolio-card__divider {
 @screen md {
   .portfolio-card {
     height: 55vh;
-    // width: 22vw;
   }
 }
 @screen sm {
   .portfolio-card {
     height: 60vh;
-    // width: 26vw;
   }
 }
 @screen xs {
   .portfolio-card {
     height: 60vh;
-    // width: 80%;
   }
 }
 </style>

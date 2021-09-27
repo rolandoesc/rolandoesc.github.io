@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "name": "Telegram",
+      "alt": "Telegram's icon",
+      "icon": "telegram",
+      "link": "https://t.me/rolandoesc"
+    },
+    {
+      "name": "Twitter",
+      "alt": "Twitter's icon",
+      "icon": "twitter",
+      "link": "https://twitter.com/rolandoesc"
+    },
+    {
+      "name": "GitHub",
+      "alt": "Github's icon",
+      "icon": "github",
+      "link": "https://github.com/rolandoesc"
+    },
+    {
+      "name": "LinkedIn",
+      "alt": "LinkedIn's icon",
+      "icon": "linkedin",
+      "link": "https://linkedin.com/in/rolandoesc/"
+    },
+    {
+      "name": "Polywork",
+      "alt": "Polyworks's icon",
+      "icon": "polywork",
+      "link": "https://www.polywork.com/chamoesc"
+    }
+  ]
+}

@@ -1,42 +1,23 @@
 <template>
-  <section class="section column centered-block w-full pt-4 relative" id="about-me">
-    <template v-if="smallView">
-      <div class="relative">
-        <AboutMe right :small-view="false">
-          <AboutMeBio />
-        </AboutMe>
-      </div>
-      <div class="relative">
-        <AboutMe left :small-view="false">
-          <AboutMeExperiencesDetails />
-        </AboutMe>
-      </div>
-    </template>
-    <template v-else>
-      <OverCard cover-card right-side />
-      <AboutMe small-view>
-        <AboutMeBio />
-        <AboutMeExperiencesDetails />
-      </AboutMe>
-    </template>
-  </section>
+  <component :is="renderedComponent" />
 </template>
 
 <script>
+import AboutMeDetailsSmall from "./AboutMeDetailsSmall";
+import AboutMeDetailsDefault from "./AboutMeDetailsDefault";
 export default {
+  components: {
+    "small-details": AboutMeDetailsSmall,
+    default: AboutMeDetailsDefault,
+  },
   computed: {
     smallView() {
-      const { is } = this.$breakpoints;
-      return is === "xs" || is === "sm";
+      const { w } = this.$breakpoints;
+      return w < 767;
+    },
+    renderedComponent() {
+      return this.smallView ? "small-details" : "default";
     },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-@screen sm {
-  .section#about-me {
-    height: auto;
-  }
-}
-</style>

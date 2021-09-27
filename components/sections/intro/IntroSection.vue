@@ -1,5 +1,5 @@
 <template>
-  <section class="section column centered-block w-full pt-4" id="intro-section">
+  <section class="section-details" id="intro-section">
     <OverCard v-if="!isSmall" />
     <Intro :is-small="isSmall" />
     <DownArrow v-if="!isSmall" />
@@ -14,6 +14,6 @@ export default {
 
 <style lang="scss" scoped>
 #intro-section {
-  @apply relative;
+  @apply pt-4;
 }
 </style>

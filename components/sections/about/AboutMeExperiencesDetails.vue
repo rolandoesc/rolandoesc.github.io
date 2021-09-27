@@ -2,7 +2,7 @@
   <div id="about-me-experiences">
     <AboutMeExperiences />
     <DotsDivider />
-    <AboutMeSkills />
+    <AboutMeSkillsList />
   </div>
 </template>
 

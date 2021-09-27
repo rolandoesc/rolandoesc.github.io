@@ -1,17 +1,17 @@
 <template>
   <div class="portfolio-list">
-    <div class="portfolio-list__grid">
+    <ul class="portfolio-list__grid">
       <PortfolioCard v-for="listItem in list" :key="listItem.name" :portfolio-details="listItem" />
-    </div>
+    </ul>
   </div>
 </template>
 
 <script>
-import PORTFOLIOLIST from "./portfolio-list.js";
+import portfolio from "~/assets/lists/portfolio.json";
 export default {
   data() {
     return {
-      list: PORTFOLIOLIST,
+      list: portfolio.list,
     };
   },
 };

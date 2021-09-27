@@ -49,7 +49,7 @@ export default {
     cardClasses() {
       let classes = this.largeCard ? "large-card" : null;
       classes += this.rotate ? " rotate" : null;
-      let orientationOnSmall = this.topLeft
+      const orientationOnSmall = this.topLeft
         ? " top-left-corner"
         : this.left
         ? " left-corner"
