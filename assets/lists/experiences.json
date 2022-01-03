@@ -5,42 +5,48 @@
 			"company": "Etsy",
 			"companyURL": "https://etsy.com",
 			"location": "Mexico City",
-			"duration": "Sept 2021 - Current Role"
+			"duration": "Sept 2021 - Current Role",
+			"companyGlow": "etsy-glow"
 		},
 		{
 			"role": "Front End Developer - Optimizations Lead",
 			"company": "Kinedu",
 			"companyURL": "https://kinedu.com",
 			"location": "Remote - Mexico",
-			"duration": "March 2021 — Sept 2021"
+			"duration": "March 2021 — Sept 2021",
+			"companyGlow": "kinedu-glow"
 		},
 		{
 			"role": "Lead Front End Developer",
 			"company": "Aiwifi Insights",
 			"companyURL": "https://aiwifi.io",
 			"location": "Mexico City",
-			"duration": "Sept 2019 — March 2021"
+			"duration": "Sept 2019 — March 2021",
+			"companyGlow": "aiwifi-glow"
 		},
 		{
 			"role": "Front End Developer",
 			"company": "Yeeko",
 			"companyURL": "https://yeeko.org/",
 			"location": "Mexico City",
-			"duration": "Mar 2019 — Sept 2019"
+			"duration": "Mar 2019 — Sept 2019",
+			"companyGlow": "yeeko-glow"
 		},
 		{
 			"role": "R&D — Front End Developer",
 			"company": "Sistemas aKúbica",
 			"companyURL": "https://akubica.com/en/",
 			"location": "Mexico City",
-			"duration": "Aug 2018 — March 2019"
+			"duration": "Aug 2018 — March 2019",
+			"companyGlow": "a3-glow"
 		},
 		{
 			"role": "Front End Developer",
 			"company": "IPP Consultores",
 			"companyURL": "http://www.ippconsultores.mx/",
 			"location": "Mexico City",
-			"duration": "Feb 2018 — Aug 2018"
+			"duration": "Feb 2018 — Aug 2018",
+			"companyGlow": "ipp-glow"
 		}
 	]
 }

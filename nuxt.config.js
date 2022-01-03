@@ -32,6 +32,14 @@ export default {
     script: [
     ]
   },
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+
+  },
   /*
   ** Global CSS
   */
@@ -62,7 +70,9 @@ export default {
     //'@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxtjs/google-fonts'
+    
   ],
   /*
   ** Nuxt.js modules
@@ -90,5 +100,12 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  googleFonts: {
+    display: 'swap',
+    families: {
+      'Bebas+Neue': true,
+      Lato: true,
+    }
   }
 }

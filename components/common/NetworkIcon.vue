@@ -1,6 +1,9 @@
 <template>
-  <li :href="icon['link']" target="_blank" class="network-icon">
-    <img :src="currentIcon" :alt="icon['alt']" />
+  <li class="network-icon">
+    <a :href="icon['link']" target="_blank" >
+      <img :src="currentIcon" :alt="icon['alt']" />
+
+    </a>
   </li>
 </template>
 
