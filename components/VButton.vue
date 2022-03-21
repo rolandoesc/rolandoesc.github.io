@@ -28,10 +28,10 @@ export default {
     },
   },
   methods: {
-    emitClick() {
+    emitClick($event) {
       if (this.jumpTo.length) this.jump(this.jumpTo);
       else if (this.openSite.length) this.openNewSite(this.openSite);
-      else this.$emit("click");
+      else this.$emit("click", $event);
     },
     jump(jumpTo) {
       const url = location.href;

@@ -35,7 +35,7 @@ export default {
 }
 
 .modal-card {
-  @apply p-4 h-auto flex items-center flex-col justify-center bg-white max-w-xl whitespace-normal;
+  @apply p-8 h-auto flex items-center flex-col justify-center bg-white max-w-xl whitespace-normal;
   .modal-card__details {
     @apply w-full break-words;
     h4 {

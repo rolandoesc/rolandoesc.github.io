@@ -10,7 +10,7 @@
         <InputField name="message" placeholder="Message" is-textbox v-model="message" rules="required" />
       </div>
       <div id="send-button">
-        <VButton @click="sendEmail()" :disabled="clickEnabled(invalid)">Send</VButton>
+        <VButton @click="sendEmail" :disabled="clickEnabled(invalid)">Send</VButton>
       </div>
     </form>
     <ModalMessage :show-modal.sync="showModal" :status="status" v-if="showModal"/>
@@ -36,7 +36,8 @@ export default {
     };
   },
   methods: {
-    async sendEmail() {
+    async sendEmail($event) {
+      $event.preventDefault();
       this.disabled = true
       const form = document.getElementById("contact-form");
       this.status = await sendEmail(form);
@@ -48,10 +49,11 @@ export default {
       return firstValidation && !this.disabled
     },
     clearForm() {
-      this.firstName = ""
+      this.name = ""
       this.lastName = ""
       this.email = ""
       this.message = ""
+      this.$refs.observer.reset();
     }
   },
 };

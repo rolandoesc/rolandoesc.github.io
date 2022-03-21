@@ -9,7 +9,7 @@
           <i>(but you can call me Chamo)</i>,
         </h2>
         <p>
-          I am a Front End Developer who loves
+          I am a Software Engineer who loves
           <br />turning ideas into something real.
         </p>
         <div id="button-links">
