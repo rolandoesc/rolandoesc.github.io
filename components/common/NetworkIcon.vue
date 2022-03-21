@@ -1,7 +1,7 @@
 <template>
   <li class="network-icon">
     <a :href="icon['link']" target="_blank" >
-      <img :src="currentIcon" :alt="icon['alt']" />
+      <img :src="currentIcon" :alt="icon['alt']" width="24" height="24"/>
 
     </a>
   </li>

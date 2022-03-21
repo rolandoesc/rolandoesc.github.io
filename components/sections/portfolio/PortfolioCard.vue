@@ -31,8 +31,12 @@ export default {
     }
   },
   computed: {
+    isSmall() {
+      return this.$breakpoints.is === "xs";
+    },
     image() {
-      return require(`~/assets/images/projects${this.portfolioDetails.image}`);
+      const imageSize = this.isSmall ? "imageMobile" : "image"
+      return require(`~/assets/images/projects${this.portfolioDetails[imageSize]}`);
     }
   }
 };
