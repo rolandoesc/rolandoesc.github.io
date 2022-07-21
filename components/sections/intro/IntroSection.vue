@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  props: ["isSmall"]
+  props: {
+    isSmall: {
+      type: Boolean,
+      required: true,
+    }
+  }
 };
 </script>
 

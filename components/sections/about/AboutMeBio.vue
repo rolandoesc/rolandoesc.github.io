@@ -14,7 +14,7 @@
         Engineer in Mexico. I consider myself as someone who seeks to be
         empathetic among others and enjoys teaching what he knows to anyone
         who's eager to learn. Photography and cooking are my favorites hobbies,
-        including traveling, latin music and swimming.
+        including traveling, latin music, swimming and talking about my cat Ceniza. ❤️🐈‍⬛
       </p>
     </div>
     <div id="download-cv">

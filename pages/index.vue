@@ -3,13 +3,22 @@
     <IntroSection :is-small="isSmall" />
     <PortfolioSection />
     <AboutMeSection />
-    <DotsDivider id="contact-divider" />
+    <DotsDivider class="section-divider" />
+    <blog-posts-section/>
+    <DotsDivider class="section-divider" />
     <ContactMeSection />
     <Footer/>
   </div>
 </template>
 <script>
+import BlogPostsSection from '../components/sections/blogposts/BlogPostsSection.vue';
 export default {
+  head() {
+    return {
+      title: `"Chamo" Escalona | Software Engineer`
+    };
+  },
+  components: { BlogPostsSection },
   computed: {
     isSmall() {
       return this.$breakpoints.is === "xs";
@@ -18,7 +27,7 @@ export default {
 };
 </script>
 <style>
-#contact-divider {
+.section-divider {
   @apply my-8;
 }
 .landing-container {
@@ -31,7 +40,7 @@ export default {
   .landing-container {
     background: url("~assets/images/holders/Background_Mobile.png");
   }
-  #contact-divider {
+  .section-divider {
     @apply pl-2;
   }
 }

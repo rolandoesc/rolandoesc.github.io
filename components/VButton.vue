@@ -4,6 +4,7 @@
     class="btn"
     :class="buttonDisabledClass"
     :disabled="disabled"
+    role="button"
   >
     <slot />
   </button>
