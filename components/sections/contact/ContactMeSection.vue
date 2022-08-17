@@ -1,5 +1,6 @@
 <template>
-  <section id="contact-section">
+  <section id="contact-section" role="region"
+    aria-labelledby="Contact me form">
     <h1>
       Let's talk and make magic happen!
     </h1>

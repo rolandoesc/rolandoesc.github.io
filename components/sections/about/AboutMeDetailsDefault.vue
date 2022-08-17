@@ -1,7 +1,9 @@
 <template>
   <section
     class="section-details"
-    id="about-me"
+    id="about-me-section"
+    role="region"
+    aria-labelledby="About me bio"
   >
     <OverCard cover-card right-side />
     <AboutMe small-view>

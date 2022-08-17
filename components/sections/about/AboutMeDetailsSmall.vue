@@ -1,7 +1,9 @@
 <template>
   <section
     class="section-details"
-    id="about-me"
+    id="about-me-section-small"
+    role="region"
+    aria-labelledby="About me bio"
   >
     <div class="relative">
       <AboutMe right :small-view="false">
@@ -21,7 +23,7 @@ export default {};
 </script>
 
 <style>
-.section#about-me {
+.section#about-me-section-small {
   height: auto;
 }
 </style>

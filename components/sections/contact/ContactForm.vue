@@ -1,6 +1,6 @@
 <template>
   <validation-observer ref="observer" v-slot="{ invalid }">
-    <form class="form" id="contact-form">
+    <form class="form" id="contact-form" role="form">
       <div id="contact-details">
         <InputField name="firstName" placeholder="Name" v-model="name" rules="alpha_spaces|required" />
         <InputField name="lastName" placeholder="Last Name" v-model="lastName" />

@@ -1,5 +1,5 @@
 <template>
-  <section id="blog-section">
+  <section id="blog-section" role="region" aria-labelledby="Chamo's blog posts">
     <h1>
       Blog
     </h1>

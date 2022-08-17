@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <p>
       <span id="current-year">2021</span>. All Rights Reserved
     </p>

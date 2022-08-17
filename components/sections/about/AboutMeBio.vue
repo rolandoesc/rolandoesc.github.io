@@ -4,7 +4,7 @@
     <div id="bio">
       <p>
         Venezuelan, curious and talkative are the main adjectives that describe
-        me. I have been a Front End Developer since 2018, and have experience in
+        me. I have worked as a Front End Developer since 2018, and have experience in
         creating web apps for different working markets, such as NGOs, startups
         &amp; companies in tech and public policy consultancy.
         <br />
@@ -17,14 +17,14 @@
         including traveling, latin music, swimming and talking about my cat Ceniza. ❤️🐈‍⬛
       </p>
     </div>
-    <div id="download-cv">
+    <!-- <div id="download-cv">
       <a
         class="btn btn-secondary"
         href="/static/cv.pdf"
         download="[en]cv_rolando_escalona.pdf"
         >Download CV</a
       >
-    </div>
+    </div> -->
   </section>
 </template>
 <style lang="scss" scoped>

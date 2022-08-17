@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-container">
+  <div class="landing-container" role="main">
     <IntroSection :is-small="isSmall" />
     <PortfolioSection />
     <AboutMeSection />
@@ -34,6 +34,7 @@ export default {
   @apply my-0 w-full flex-col min-h-screen flex justify-center text-center items-center relative;
   background: url("~assets/images/holders/Background_Desktop.png");
   overflow-x: hidden !important;
+  background-color: white;
 }
 
 @media screen and (max-width: 679px) {

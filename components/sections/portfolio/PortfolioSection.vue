@@ -1,5 +1,6 @@
 <template>
-  <section class="section column" id="portfolio-section">
+  <section class="section column" id="portfolio-section" role="region"
+    aria-labelledby="Portfolio">
     <div id="section-title">
       <h1>
         Portfolio

@@ -1,5 +1,6 @@
 <template>
-  <section class="section-details" id="intro-section">
+  <section class="section-details" id="intro-section" role="region"
+    aria-labelledby="Intro">
     <OverCard v-if="!isSmall" />
     <Intro :is-small="isSmall" />
     <DownArrow v-if="!isSmall" />

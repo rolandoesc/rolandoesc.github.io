@@ -1,6 +1,6 @@
 <template>
 <li class="experience">
-	<h3>
+	<p>
 		{{ job["role"] }},
 		<a 
 			:href="job['companyURL']" 
@@ -8,7 +8,7 @@
 			:class="job['companyGlow']"
 		><u>{{ job["company"] }}</u></a
 		>
-	</h3>
+	</p>
 	<p>{{ job["location"] }}, {{ job["duration"] }}</p>
 </li>
 </template>
@@ -28,7 +28,7 @@ export default {
 
 li.experience {
 	@apply flex flex-col my-2 list-disc;
-	h3 {
+	p {
 		@apply font-bold;
 	}
 }
@@ -37,7 +37,7 @@ li.experience {
 	li.experience {
 		@apply flex flex-col my-2 list-disc py-2;
 		user-select: none;
-		h3 {
+		p {
 			@apply font-bold;
 		}
 	}

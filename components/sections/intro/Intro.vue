@@ -2,7 +2,7 @@
   <div id="intro">
     <section-card has-dots :dots-bottom="isSmall" top-left>
       <div id="intro-details">
-        <h1 id="title">Welcome!</h1>
+        <h1 id="title" role="banner">Welcome!</h1>
         <h2>
           My name is Rolando Escalona
           <br />
