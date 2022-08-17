@@ -6,6 +6,7 @@
 			:href="job['companyURL']" 
 			target="_blank" 
 			:class="job['companyGlow']"
+      rel="noreferrer"
 		><u>{{ job["company"] }}</u></a
 		>
 	</p>

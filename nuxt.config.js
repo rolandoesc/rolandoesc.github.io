@@ -28,9 +28,12 @@ export default {
       { hid: 'og:site_name', name: 'site_name', content: `https://chamo.tech` },
       { hid: 'og:title', name: 'title', content: `"Chamo" Escalona's Portfolio` },
       { hid: 'apple-mobile-web-app-title', name: 'appe-mobile-web-app-title', content: `"Chamo" Escalona's Portfolio` },
+      { theme_color: '#FFFFFF'},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/apple-icon-180x180.png' },
+      { rel: 'shortcut icon', type: 'image/png', href: '/android-icon-192x192.png' },
     ],
     script: [
     ]
