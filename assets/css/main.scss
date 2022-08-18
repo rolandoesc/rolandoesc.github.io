@@ -116,3 +116,70 @@ h1 {
   -webkit-box-sizing: border-box;
   border: solid black 1px;
 }
+
+.element-card {
+  @apply relative w-full flex flex-col bg-white;
+  height: 60vh;
+  border: solid black 4pt;
+  border-radius: 20px;
+  z-index: 0;
+
+  .element-card__over-card {
+    @apply absolute bg-transparent;
+    -webkit-box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
+    box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
+    width: 105%;
+    height: 108%;
+    z-index: -3;
+    left: 10px;
+    bottom: -4%;
+    border-radius: 25px;
+  }
+}
+
+.element-card__image {
+  max-height: 45%;
+  height: 45%;
+  .image {
+    @apply object-contain bg-white;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.element-card__info {
+  height: 55% !important;
+  @apply pt-2;
+  @apply flex flex-col px-1;
+}
+h2.element-card__project__name {
+  @apply font-thin text-2xl uppercase text-left pl-2 pt-2;
+  height: 35%;
+}
+p.element-card__project__description {
+  @apply text-base text-justify px-2;
+}
+
+hr.element-card__divider {
+  width: 40%;
+  @apply border-black ml-2 px-2;
+  border-top-color: black !important;
+}
+@screen md {
+  .element-card {
+    height: 55vh;
+  }
+}
+@screen sm {
+  .element-card {
+    height: 60vh;
+  }
+}
+@screen xs {
+  .element-card {
+    height: 60vh;
+  }
+}

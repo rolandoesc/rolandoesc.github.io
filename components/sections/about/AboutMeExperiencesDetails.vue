@@ -1,6 +1,6 @@
 <template>
   <div id="about-me-experiences">
-    <AboutMeExperiences />
+    <AboutMeExperiences :is-small="isSmall" />
     <DotsDivider />
     <AboutMeSkillsList />
   </div>
@@ -11,6 +11,12 @@ import DotsDivider from "../../common/DotsDivider.vue";
 import AboutMeExperiences from "./AboutMeExperiences.vue";
 import AboutMeSkillsList from "./AboutMeSkillsList.vue";
 export default {
+  props: {
+    isSmall: {
+      type: Boolean,
+      required: false,
+    },
+  },
   components: {
     AboutMeExperiences,
     DotsDivider,

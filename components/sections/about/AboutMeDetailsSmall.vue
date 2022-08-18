@@ -12,7 +12,7 @@
     </div>
     <div class="relative">
       <AboutMe left :small-view="false">
-        <AboutMeExperiencesDetails />
+        <AboutMeExperiencesDetails :is-small="true" />
       </AboutMe>
     </div>
   </section>

@@ -1,8 +1,8 @@
 <template>
   <div class="landing-container" role="main">
-    <intro-section :is-small="isSmall" />
-    <portfolio-section />
-    <AboutMeSection />
+    <IntroSection :is-small="isSmall" />
+    <PortfolioSection />
+    <AboutMeSection :is-small="isSmall" />
     <DotsDivider class="section-divider" />
     <BlogPostsSection />
     <DotsDivider class="section-divider" />
@@ -48,7 +48,6 @@ export default {
   @apply my-0 w-full flex-col min-h-screen flex justify-center text-center items-center relative;
   background: url("~assets/images/holders/Background_Desktop.png");
   overflow-x: hidden !important;
-  background-color: white;
 }
 
 @media screen and (max-width: 679px) {

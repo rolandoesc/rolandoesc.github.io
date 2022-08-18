@@ -1,23 +1,21 @@
 <template>
-  <li class="portfolio-card">
-    <div class="portfolio-card__over-card"></div>
-    <div class="portfolio-card__image">
+  <li class="element-card portfolio">
+    <div class="element-card__over-card"></div>
+    <div class="element-card__image">
       <a :href="portfolioDetails.link" target="_blank">
-        <img
-          :src="image"
-          :alt="portfolioDetails.alt"
-          class="image"
-        />
+        <img :src="image" :alt="portfolioDetails.alt" class="image" />
       </a>
     </div>
-    <div class="portfolio-card__info">
-      <hr class="portfolio-card__divider" />
-      <h2 class="portfolio-card__project__name">
-        <a :href="portfolioDetails.link" target="_blank" class="glow">{{portfolioDetails.name}}</a>
+    <div class="element-card__info">
+      <hr class="element-card__divider" />
+      <h2 class="element-card__project__name">
+        <a :href="portfolioDetails.link" target="_blank" class="glow">{{
+          portfolioDetails.name
+        }}</a>
       </h2>
-      <p
-        class="portfolio-card__project__description"
-      >{{portfolioDetails.description}}</p>
+      <p class="element-card__project__description">
+        {{ portfolioDetails.description }}
+      </p>
     </div>
   </li>
 </template>
@@ -27,86 +25,17 @@ export default {
   props: {
     portfolioDetails: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     isSmall() {
       return this.$breakpoints.is === "xs";
     },
     image() {
-      const imageSize = this.isSmall ? "imageMobile" : "image"
+      const imageSize = this.isSmall ? "imageMobile" : "image";
       return require(`~/assets/images/projects${this.portfolioDetails[imageSize]}`);
-    }
-  }
+    },
+  },
 };
 </script>
-
-<style lang="scss" scoped>
-.portfolio-card {
-  @apply relative w-full flex flex-col bg-white;
-  height: 60vh;
-  border: solid black 4pt;
-  border-radius: 20px;
-  z-index: 0;
-
-  .portfolio-card__over-card {
-    @apply absolute bg-transparent;
-    -webkit-box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
-    -moz-box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
-    box-shadow: 8px 2px 21px 3px rgba(0, 0, 0, 0.41);
-    width: 105%;
-    height: 108%;
-    z-index: -3;
-    left: 10px;
-    bottom: -4%;
-    border-radius: 25px;
-  }
-}
-
-.portfolio-card__image {
-  max-height: 45%;
-  height: 45%;
-  .image {
-    @apply object-contain bg-white;
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-}
-
-.portfolio-card__info {
-  height: 55% !important;
-  @apply pt-2;
-  @apply flex flex-col px-1;
-}
-h2.portfolio-card__project__name {
-  @apply font-thin text-2xl uppercase text-left pl-2 pt-2;
-  height: 35%;
-}
-p.portfolio-card__project__description {
-  @apply text-base text-justify px-2;
-}
-
-hr.portfolio-card__divider {
-  width: 40%;
-  @apply border-black ml-2 px-2;
-  border-top-color: black !important;
-}
-@screen md {
-  .portfolio-card {
-    height: 55vh;
-  }
-}
-@screen sm {
-  .portfolio-card {
-    height: 60vh;
-  }
-}
-@screen xs {
-  .portfolio-card {
-    height: 60vh;
-  }
-}
-</style>

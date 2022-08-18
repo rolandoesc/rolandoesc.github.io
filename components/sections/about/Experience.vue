@@ -1,53 +1,69 @@
 <template>
-<li class="experience">
-	<p>
-		{{ job["role"] }},
-		<a 
-			:href="job['companyURL']" 
-			target="_blank" 
-			:class="job['companyGlow']"
-      rel="noreferrer"
-		><u>{{ job["company"] }}</u></a
-		>
-	</p>
-	<p>{{ job["location"] }}, {{ job["duration"] }}</p>
-</li>
+  <li class="experience">
+    <p>
+      {{ job["role"] }},
+      <a
+        :href="job['companyURL']"
+        target="_blank"
+        :class="job['companyGlow']"
+        rel="noreferrer"
+      >
+        <u>{{ job["company"] }}</u>
+      </a>
+    </p>
+    <p>{{ location }}, {{ duration }}</p>
+  </li>
 </template>
 
 <script>
 export default {
- props: {
-	 job: {
-		 type: Object,
-		 required: true
-	 }
- }
-}
+  props: {
+    job: {
+      type: Object,
+      required: true,
+    },
+    isSmall: {
+      type: Boolean,
+      required: false,
+    },
+  },
+  computed: {
+    location() {
+      return this.isSmall ? this.job["locationMobile"] : this.job["location"];
+    },
+    duration() {
+      const { duration } = this.job;
+      const endDate = duration.isCurrentRole
+        ? "Current Role"
+        : duration.endDate;
+      return duration.startDate + " — " + endDate;
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-
 li.experience {
-	@apply flex flex-col my-2 list-disc;
-	p {
-		@apply font-bold;
-	}
+  @apply flex flex-col my-2 list-disc;
+  p {
+    @apply font-bold;
+  }
 }
 
 @screen xl {
-	li.experience {
-		@apply flex flex-col my-2 list-disc py-2;
-		user-select: none;
-		p {
-			@apply font-bold;
-		}
-	}
+  li.experience {
+    @apply flex flex-col my-2 list-disc py-2;
+    user-select: none;
+    p {
+      @apply font-bold;
+    }
+  }
 }
 
 .etsy-glow {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #F1641E, #F1641E 50%, black 50%);
+  background: linear-gradient(to right, #f1641e, #f1641e 50%, black 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,7 +76,7 @@ li.experience {
 .yeeko-glow {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #DE006E, #DE006E 50%, black 50%);
+  background: linear-gradient(to right, #de006e, #de006e 50%, black 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,7 +102,7 @@ li.experience {
 .a3-glow {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #6EC1E4, #6EC1E4 50%, black 50%);
+  background: linear-gradient(to right, #6ec1e4, #6ec1e4 50%, black 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,7 +115,7 @@ li.experience {
 .kinedu-glow {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #0086D8, #0086D8 50%, black 50%);
+  background: linear-gradient(to right, #0086d8, #0086d8 50%, black 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -127,7 +143,7 @@ li.experience {
 .a3-glow:hover,
 .yeeko-glow:hover,
 .etsy-glow:hover {
-    background-position: 0 100%;
+  background-position: 0 100%;
 }
 
 @screen xs {
@@ -140,5 +156,4 @@ li.experience {
     background-position: 0 100%;
   }
 }
-
 </style>

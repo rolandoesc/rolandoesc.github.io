@@ -6,6 +6,12 @@
 import AboutMeDetailsSmall from "./AboutMeDetailsSmall";
 import AboutMeDetailsDefault from "./AboutMeDetailsDefault";
 export default {
+  props: {
+    isSmall: {
+      type: Boolean,
+      required: true,
+    },
+  },
   components: {
     "small-details": AboutMeDetailsSmall,
     default: AboutMeDetailsDefault,

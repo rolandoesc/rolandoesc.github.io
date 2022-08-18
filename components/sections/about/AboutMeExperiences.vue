@@ -4,6 +4,7 @@
       v-for="(job, jobIndex) in experiences"
       :key="jobIndex"
       :job="job"
+      :is-small="isSmall"
     />
   </ul>
 </template>
@@ -12,6 +13,12 @@
 import Experience from "./Experience.vue";
 import experiences from "~/assets/lists/experiences.json";
 export default {
+  props: {
+    isSmall: {
+      type: Boolean,
+      required: false,
+    },
+  },
   components: {
     Experience,
   },
