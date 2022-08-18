@@ -1,6 +1,6 @@
 <template>
   <ul class="experiences-list">
-    <Experience 
+    <Experience
       v-for="(job, jobIndex) in experiences"
       :key="jobIndex"
       :job="job"
@@ -9,8 +9,12 @@
 </template>
 
 <script>
+import Experience from "./Experience.vue";
 import experiences from "~/assets/lists/experiences.json";
 export default {
+  components: {
+    Experience,
+  },
   data() {
     return {
       experiences: experiences.list,
@@ -20,13 +24,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .experiences-list {
   @apply list-outside px-4;
 }
 @screen xl {
   .experiences-list {
-    @apply py-6; 
+    @apply py-6;
   }
 }
 @screen xs {

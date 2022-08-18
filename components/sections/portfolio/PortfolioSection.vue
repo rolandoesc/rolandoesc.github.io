@@ -1,17 +1,24 @@
 <template>
-  <section class="section column" id="portfolio-section" role="region"
-    aria-labelledby="Portfolio">
+  <section
+    class="section column"
+    id="portfolio-section"
+    role="region"
+    aria-labelledby="Portfolio"
+  >
     <div id="section-title">
-      <h1>
-        Portfolio
-      </h1>
+      <h1>Portfolio</h1>
     </div>
     <PortfolioList />
   </section>
 </template>
 
 <script>
-export default {};
+import PortfolioList from "./PortfolioList.vue";
+export default {
+  components: {
+    PortfolioList,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

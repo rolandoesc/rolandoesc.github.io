@@ -12,3 +12,17 @@
     </AboutMe>
   </section>
 </template>
+<script>
+import OverCard from "../../common/OverCard.vue";
+import AboutMe from "./AboutMe.vue";
+import AboutMeBio from "./AboutMeBio.vue";
+import AboutMeExperiencesDetails from "./AboutMeExperiencesDetails.vue";
+export default {
+  components: {
+    OverCard,
+    AboutMe,
+    AboutMeBio,
+    AboutMeExperiencesDetails,
+  },
+};
+</script>

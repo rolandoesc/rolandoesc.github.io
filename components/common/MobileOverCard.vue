@@ -4,12 +4,13 @@
 
 <script>
 export default {
+  name: "MobileOverCard",
   props: ["topLeft", "left", "right"],
   computed: {
     orientation() {
-      return this.right ? "over-right" : "over-left"
-    }
-  }
+      return this.right ? "over-right" : "over-left";
+    },
+  },
 };
 </script>
 

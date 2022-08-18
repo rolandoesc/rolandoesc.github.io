@@ -1,14 +1,23 @@
 <template>
   <div class="portfolio-list">
     <ul class="portfolio-list__grid">
-      <PortfolioCard v-for="listItem in list" :key="listItem.name" :portfolio-details="listItem" />
+      <PortfolioCard
+        v-for="listItem in list"
+        :key="listItem.name"
+        :portfolio-details="listItem"
+      />
     </ul>
   </div>
 </template>
 
 <script>
 import portfolio from "~/assets/lists/portfolio.json";
+import PortfolioCard from "./PortfolioCard.vue";
 export default {
+  name: "PortfolioList",
+  components: {
+    PortfolioCard,
+  },
   data() {
     return {
       list: portfolio.list,

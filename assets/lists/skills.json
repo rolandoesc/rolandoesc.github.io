@@ -1,23 +1,23 @@
 {
 	"list": [
 		{
-			"name": "HTML icon",
+			"name": "HTML",
 			"icon": "html5-brands"
 		},
 		{
-			"name": "CSS icon",
+			"name": "CSS",
 			"icon": "css3-alt-brands"
 		},
 		{
-			"name": "JavaScript icon",
+			"name": "JavaScript",
 			"icon": "js-brands"
 		},
 		{
-			"name": "Vue.JS icon",
+			"name": "Vue.JS",
 			"icon": "vuejs-brands"
 		},
 		{
-			"name": "React.JS icon",
+			"name": "React.JS",
 			"icon": "react-brands"
 		}
 	]

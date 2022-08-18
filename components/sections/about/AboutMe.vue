@@ -1,15 +1,19 @@
 <template>
   <div id="about-me">
-    <section-card :rotate="smallView" large-card :left="left" :right="right">
+    <SectionCard :rotate="smallView" large-card :left="left" :right="right">
       <div id="about-me-details">
         <slot />
       </div>
-    </section-card>
+    </SectionCard>
   </div>
 </template>
 
 <script>
+import SectionCard from "../../common/SectionCard.vue";
 export default {
+  components: {
+    SectionCard,
+  },
   props: ["left", "right", "smallView"],
 };
 </script>

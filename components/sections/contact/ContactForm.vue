@@ -1,27 +1,57 @@
 <template>
-  <validation-observer ref="observer" v-slot="{ invalid }">
+  <ValidationObserver ref="observer" v-slot="{ invalid }">
     <form class="form" id="contact-form" role="form">
       <div id="contact-details">
-        <InputField name="firstName" placeholder="Name" v-model="name" rules="alpha_spaces|required" />
-        <InputField name="lastName" placeholder="Last Name" v-model="lastName" />
-        <InputField name="email" placeholder="E-mail" rules="email|required" v-model="email" />
+        <InputField
+          name="firstName"
+          placeholder="Name"
+          v-model="name"
+          rules="alpha_spaces|required"
+        />
+        <InputField
+          name="lastName"
+          placeholder="Last Name"
+          v-model="lastName"
+        />
+        <InputField
+          name="email"
+          placeholder="E-mail"
+          rules="email|required"
+          v-model="email"
+        />
       </div>
       <div id="contact-message">
-        <InputField name="message" placeholder="Message" is-textbox v-model="message" rules="required" />
+        <InputField
+          name="message"
+          placeholder="Message"
+          is-textbox
+          v-model="message"
+          rules="required"
+        />
       </div>
       <div id="send-button">
-        <VButton @click="sendEmail" :disabled="clickEnabled(invalid)">Send</VButton>
+        <VButton @click="sendEmail" :disabled="clickEnabled(invalid)"
+          >Send</VButton
+        >
       </div>
     </form>
-    <ModalMessage :show-modal.sync="showModal" :status="status" v-if="showModal"/>
-  </validation-observer>
+    <ModalMessage
+      :show-modal.sync="showModal"
+      :status="status"
+      v-if="showModal"
+    />
+  </ValidationObserver>
 </template>
 
 <script>
+import InputField from "../../common/InputField.vue";
+import ModalMessage from "../../common/ModalMessage.vue";
 import { ValidationObserver } from "vee-validate";
 import { sendEmail } from "@/plugins/email.js";
 export default {
   components: {
+    InputField,
+    ModalMessage,
     ValidationObserver,
   },
   data() {
@@ -32,29 +62,29 @@ export default {
       message: "",
       disabled: false,
       showModal: false,
-      status: 0
+      status: 0,
     };
   },
   methods: {
     async sendEmail($event) {
       $event.preventDefault();
-      this.disabled = true
+      this.disabled = true;
       const form = document.getElementById("contact-form");
       this.status = await sendEmail(form);
-      this.showModal = true
-      this.disabled = false
+      this.showModal = true;
+      this.disabled = false;
       this.status < 400 ? this.clearForm() : null;
     },
     clickEnabled(firstValidation) {
-      return firstValidation && !this.disabled
+      return firstValidation && !this.disabled;
     },
     clearForm() {
-      this.name = ""
-      this.lastName = ""
-      this.email = ""
-      this.message = ""
+      this.name = "";
+      this.lastName = "";
+      this.email = "";
+      this.message = "";
       this.$refs.observer.reset();
-    }
+    },
   },
 };
 </script>
@@ -86,7 +116,7 @@ export default {
     #contact-details {
       @apply flex-col w-4/5 pl-4;
       * {
-        @apply px-0; 
+        @apply px-0;
       }
       *:first-child {
         @apply px-0;
@@ -98,7 +128,6 @@ export default {
     #contact-message {
       @apply flex-col w-4/5 pl-4;
     }
-
   }
 }
 </style>

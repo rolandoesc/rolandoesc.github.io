@@ -1,21 +1,21 @@
 <template>
   <div class="blogposts-list">
     <ul class="blogposts-list__grid" v-if="posts.length > 0">
-      <blog-post-card v-for="post in posts" :key="post.id" :post-details="post" />
+      <BlogPostCard v-for="post in posts" :key="post.id" :post-details="post" />
     </ul>
   </div>
 </template>
 
 <script>
-import BlogPostCard from './BlogPostCard.vue';
+import BlogPostCard from "./BlogPostCard.vue";
 export default {
   components: { BlogPostCard },
   props: {
-      posts: {
-          type: Array,
-          required: true
-      }
-  }
+    posts: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 

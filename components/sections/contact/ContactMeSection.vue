@@ -1,17 +1,17 @@
 <template>
-  <section id="contact-section" role="region"
-    aria-labelledby="Contact me form">
-    <h1>
-      Let's talk and make magic happen!
-    </h1>
+  <section id="contact-section" role="region" aria-labelledby="Contact me form">
+    <h1>Let's talk and make magic happen!</h1>
     <ContactForm />
   </section>
 </template>
 
 <script>
-  export default {
-    
-  }
+import ContactForm from "./ContactForm.vue";
+export default {
+  components: {
+    ContactForm,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

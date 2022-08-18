@@ -1,28 +1,42 @@
 <template>
   <div class="landing-container" role="main">
-    <IntroSection :is-small="isSmall" />
-    <PortfolioSection />
+    <intro-section :is-small="isSmall" />
+    <portfolio-section />
     <AboutMeSection />
     <DotsDivider class="section-divider" />
-    <blog-posts-section/>
+    <BlogPostsSection />
     <DotsDivider class="section-divider" />
     <ContactMeSection />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 <script>
-import BlogPostsSection from '../components/sections/blogposts/BlogPostsSection.vue';
+import BlogPostsSection from "../components/sections/blogposts/BlogPostsSection.vue";
+import IntroSection from "../components/sections/intro/IntroSection.vue";
+import PortfolioSection from "../components/sections/portfolio/PortfolioSection.vue";
+import AboutMeSection from "../components/sections/about/AboutMeSection.vue";
+import DotsDivider from "../components/common/DotsDivider";
+import ContactMeSection from "../components/sections/contact/ContactMeSection.vue";
+import Footer from "../components/sections/footer/Footer.vue";
 export default {
-  head() {
-    return {
-      title: `"Chamo" Escalona | Software Engineer`
-    };
+  components: {
+    BlogPostsSection,
+    IntroSection,
+    PortfolioSection,
+    AboutMeSection,
+    DotsDivider,
+    ContactMeSection,
+    Footer,
   },
-  components: { BlogPostsSection },
   computed: {
     isSmall() {
       return this.$breakpoints.is === "xs";
     },
+  },
+  head() {
+    return {
+      title: '"Chamo" Escalona | Software Engineer',
+    };
   },
 };
 </script>

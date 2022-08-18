@@ -13,11 +13,13 @@
     <div class="blog-card__info">
       <hr class="blog-card__divider" />
       <h2 class="blog-card__project__name">
-        <a :href="postDetails.url" target="_blank" class="glow">{{postDetails.title}}</a>
+        <a :href="postDetails.url" target="_blank" class="glow">{{
+          postDetails.title
+        }}</a>
       </h2>
-      <p
-        class="blog-card__project__description"
-      >{{postDetails.description}}</p>
+      <p class="blog-card__project__description">
+        {{ postDetails.description }}
+      </p>
     </div>
   </li>
 </template>
@@ -27,21 +29,21 @@ export default {
   props: {
     postDetails: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     isSmall() {
       return this.$breakpoints.is === "xs";
     },
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .blog-card {
   @apply relative w-full flex flex-col bg-white;
-  height: 40vh;
+  height: 60vh;
   border: solid black 4pt;
   border-radius: 20px;
   z-index: 0;
@@ -73,16 +75,16 @@ export default {
 }
 
 .blog-card__info {
-//   height: 55% !important;
+  height: 55% !important;
   @apply pt-2;
   @apply flex flex-col px-1;
 }
 h2.blog-card__project__name {
-  @apply font-thin text-xl uppercase text-left pl-2 pt-2;
-//   height: 35%;
+  @apply font-thin text-2xl uppercase text-left pl-2 pt-2;
+  height: 35%;
 }
 p.blog-card__project__description {
-  @apply text-base text-justify px-2 pt-2;
+  @apply text-base text-justify px-2;
 }
 
 hr.blog-card__divider {

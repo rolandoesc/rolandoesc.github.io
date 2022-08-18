@@ -4,9 +4,9 @@
     <div id="bio">
       <p>
         Venezuelan, curious and talkative are the main adjectives that describe
-        me. I have worked as a Front End Developer since 2018, and have experience in
-        creating web apps for different working markets, such as NGOs, startups
-        &amp; companies in tech and public policy consultancy.
+        me. I have worked as a Front End Developer since 2018, and have
+        experience in creating web apps for different working markets, such as
+        NGOs, startups &amp; companies in tech and public policy consultancy.
         <br />
         <br />
         I have been living abroad since 2016, working as an English teacher in
@@ -14,17 +14,10 @@
         Engineer in Mexico. I consider myself as someone who seeks to be
         empathetic among others and enjoys teaching what he knows to anyone
         who's eager to learn. Photography and cooking are my favorites hobbies,
-        including traveling, latin music, swimming and talking about my cat Ceniza. ❤️🐈‍⬛
+        including traveling, latin music, swimming and talking about my cat
+        Ceniza. ❤️🐈‍⬛
       </p>
     </div>
-    <!-- <div id="download-cv">
-      <a
-        class="btn btn-secondary"
-        href="/static/cv.pdf"
-        download="[en]cv_rolando_escalona.pdf"
-        >Download CV</a
-      >
-    </div> -->
   </section>
 </template>
 <style lang="scss" scoped>

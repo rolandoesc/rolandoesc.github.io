@@ -16,18 +16,24 @@
           <v-button jump-to="portfolio-section">Portfolio</v-button>
           <v-button jump-to="contact-section">Contact</v-button>
         </div>
-        <NetworkIconsList />
+        <network-icons-list />
       </div>
     </section-card>
   </div>
 </template>
 <script>
+import SectionCard from "../../common/SectionCard.vue";
+import NetworkIconsList from "../../common/NetworkIconsList.vue";
 export default {
+  components: {
+    NetworkIconsList,
+    SectionCard,
+  },
   props: {
     isSmall: {
       type: Boolean,
       required: true,
-    }
+    },
   },
 };
 </script>

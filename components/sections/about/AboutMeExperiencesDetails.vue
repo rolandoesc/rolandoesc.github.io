@@ -7,7 +7,16 @@
 </template>
 
 <script>
-export default {};
+import DotsDivider from "../../common/DotsDivider.vue";
+import AboutMeExperiences from "./AboutMeExperiences.vue";
+import AboutMeSkillsList from "./AboutMeSkillsList.vue";
+export default {
+  components: {
+    AboutMeExperiences,
+    DotsDivider,
+    AboutMeSkillsList,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

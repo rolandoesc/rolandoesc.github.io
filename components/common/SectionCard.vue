@@ -7,7 +7,14 @@
 </template>
 
 <script>
+import MobileOverCard from "./MobileOverCard.vue";
+import CardDots from "./CardDots.vue";
 export default {
+  name: "SectionCard",
+  components: {
+    MobileOverCard,
+    CardDots,
+  },
   props: {
     rotate: {
       type: Boolean,

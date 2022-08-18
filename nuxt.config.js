@@ -1,5 +1,3 @@
-require('dotenv').config({ path: `.env` })//.${process.env.ENV_FILE}`
-const path = require('path')
 export default {
   /*
   ** Nuxt rendering mode
@@ -18,22 +16,22 @@ export default {
   head: {
     title: 'Chamo Escalona',
     htmlAttrs: {
-      lang: "en",
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: `Welcome to Rolando "Chamo" Escalona's Portfolio, Software Engineer` },
-      { hid: 'og:description', name: 'description', content: `Welcome to Rolando "Chamo" Escalona's Portfolio, Software Engineer` },
-      { hid: 'og:site_name', name: 'site_name', content: `https://chamo.tech` },
-      { hid: 'og:title', name: 'title', content: `"Chamo" Escalona's Portfolio` },
-      { hid: 'apple-mobile-web-app-title', name: 'appe-mobile-web-app-title', content: `"Chamo" Escalona's Portfolio` },
-      { theme_color: '#FFFFFF'},
+      { hid: 'description', name: 'description', content: 'Welcome to Rolando "Chamo" Escalona\'s Portfolio, Software Engineer' },
+      { hid: 'og:description', name: 'description', content: 'Welcome to Rolando "Chamo" Escalona\'s Portfolio, Software Engineer' },
+      { hid: 'og:site_name', name: 'site_name', content: 'https://chamo.tech' },
+      { hid: 'og:title', name: 'title', content: '"Chamo" Escalona\'s Portfolio' },
+      { hid: 'apple-mobile-web-app-title', name: 'appe-mobile-web-app-title', content: '"Chamo" Escalona\'s Portfolio' },
+      { theme_color: '#FFFFFF' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', type: 'image/png', href: '/apple-icon-180x180.png' },
-      { rel: 'shortcut icon', type: 'image/png', href: '/android-icon-192x192.png' },
+      { rel: 'shortcut icon', type: 'image/png', href: '/android-icon-192x192.png' }
     ],
     script: [
     ]
@@ -58,7 +56,7 @@ export default {
   */
   plugins: [
     { src: '~/plugins/breakpoints.js' },
-    "~/plugins/vee-validate.js",
+    '~/plugins/vee-validate.js',
     { src: '~plugins/ga.js' }
     // { src: '~/plugins/igphotos.js' },
   ],
@@ -73,12 +71,12 @@ export default {
   buildModules: [
     // ['@nuxtjs/dotenv', { filename: `.env` }], //.${process.env.NODE_ENV}
     // Doc: https://github.com/nuxt-community/eslint-module
-    //'@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
     '@nuxtjs/google-fonts'
-    
+
   ],
   /*
   ** Nuxt.js modules
@@ -88,7 +86,7 @@ export default {
     '@nuxtjs/axios',
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
+    '@nuxt/content'
 
   ],
   /*
@@ -111,7 +109,7 @@ export default {
     display: 'swap',
     families: {
       'Bebas+Neue': true,
-      Lato: true,
+      Lato: true
     }
   }
 }

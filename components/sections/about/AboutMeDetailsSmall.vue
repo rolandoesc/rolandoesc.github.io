@@ -19,7 +19,16 @@
 </template>
 
 <script>
-export default {};
+import AboutMe from "./AboutMe.vue";
+import AboutMeBio from "./AboutMeBio.vue";
+import AboutMeExperiencesDetails from "./AboutMeExperiencesDetails.vue";
+export default {
+  components: {
+    AboutMe,
+    AboutMeBio,
+    AboutMeExperiencesDetails,
+  },
+};
 </script>
 
 <style>
