@@ -32,8 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .experiences-list {
-  @apply list-outside px-4;
+  @apply list-outside list-disc px-4;
 }
+
 @screen xl {
   .experiences-list {
     @apply py-6;

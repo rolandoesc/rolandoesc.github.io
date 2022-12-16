@@ -1,13 +1,16 @@
 <template>
   <div class="landing-container" role="main">
-    <IntroSection :is-small="isSmall" />
-    <PortfolioSection />
-    <AboutMeSection :is-small="isSmall" />
-    <DotsDivider class="section-divider" />
-    <BlogPostsSection />
-    <DotsDivider class="section-divider" />
-    <ContactMeSection />
-    <Footer />
+    <template v-if="this.$breakpoints.canBeDisplayed">
+      <IntroSection :is-small="isSmall" />
+      <PortfolioSection />
+      <AboutMeSection :is-small="isSmall" />
+      <DotsDivider class="section-divider" />
+      <BlogPostsSection />
+      <DotsDivider class="section-divider" />
+      <ContactMeSection />
+      <Footer />
+    </template>
+    <TooSmall v-else />
   </div>
 </template>
 <script>
@@ -18,6 +21,7 @@ import AboutMeSection from "../components/sections/about/AboutMeSection.vue";
 import DotsDivider from "../components/common/DotsDivider";
 import ContactMeSection from "../components/sections/contact/ContactMeSection.vue";
 import Footer from "../components/sections/footer/Footer.vue";
+import TooSmall from "../components/sections/smallview/TooSmall.vue";
 export default {
   components: {
     BlogPostsSection,
@@ -27,10 +31,11 @@ export default {
     DotsDivider,
     ContactMeSection,
     Footer,
+    TooSmall,
   },
   computed: {
     isSmall() {
-      return this.$breakpoints.is === "xs";
+      return this.$breakpoints.isSmall;
     },
   },
   head() {

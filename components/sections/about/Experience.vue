@@ -10,8 +10,9 @@
       >
         <u>{{ job["company"] }}</u>
       </a>
+      <br />
+      {{ location }}, {{ duration }}
     </p>
-    <p>{{ location }}, {{ duration }}</p>
   </li>
 </template>
 
@@ -44,15 +45,26 @@ export default {
 
 <style lang="scss">
 li.experience {
-  @apply flex flex-col my-2 list-disc;
+  @apply flex-col my-2 list-disc;
   p {
     @apply font-bold;
   }
 }
+li.experience::marker {
+  color: var(--primary-blue);
+  font-size: 2rem;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li.experience::before {
+  @apply border;
+}
 
 @screen xl {
   li.experience {
-    @apply flex flex-col my-2 list-disc py-2;
+    @apply flex-col my-2 list-disc py-2;
     user-select: none;
     p {
       @apply font-bold;

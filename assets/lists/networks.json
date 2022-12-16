@@ -1,10 +1,10 @@
 {
   "list": [
     {
-      "name": "Telegram",
-      "alt": "Telegram's icon",
-      "icon": "telegram",
-      "link": "https://t.me/rolandoesc"
+      "name": "Mastodon",
+      "alt": "Mastodon's icon",
+      "icon": "mastodon",
+      "link": "https://masto.ai/@chamo"
     },
     {
       "name": "Twitter",

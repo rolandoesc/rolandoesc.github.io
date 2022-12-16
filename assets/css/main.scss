@@ -157,7 +157,7 @@ h1 {
 }
 h2.element-card__project__name {
   @apply font-thin text-2xl uppercase text-left pl-2 pt-2;
-  height: 35%;
+  min-height: 35%;
 }
 p.element-card__project__description {
   @apply text-base text-justify px-2;

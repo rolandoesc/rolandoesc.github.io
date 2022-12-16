@@ -2,24 +2,28 @@
   <div class="contact-field">
     <ValidationProvider :name="name" :rules="rules" v-slot="{ errors }">
       <div class="error-container absolute">
-        <span class="error-message" :class="{'error': errors[0]}">{{ errors[0] }}</span>
+        <span class="error-message" :class="{ error: errors[0] }">
+          {{ errors[0] }}
+        </span>
       </div>
-      <textarea
-        v-if="isTextbox"
-        type="text"
-        :name="name"
-        :placeholder="placeholder"
-        v-model="inputValue"
-        :class="{'input-error': errors[0]}"
-      ></textarea>
-      <input 
-        v-else 
-        type="text" 
-        :name="name" 
-        :placeholder="placeholder"
-        v-model="inputValue"
-        :class="{'input-error': errors[0]}"
-      />
+      <div :class="[errors[0] ? 'field-error' : 'field']">
+        <textarea
+          v-if="isTextbox"
+          type="text"
+          :name="name"
+          :placeholder="placeholder"
+          v-model="inputValue"
+          :class="{ 'input-error': errors[0] }"
+        ></textarea>
+        <input
+          v-else
+          type="text"
+          :name="name"
+          :placeholder="placeholder"
+          v-model="inputValue"
+          :class="{ 'input-error': errors[0] }"
+        />
+      </div>
     </ValidationProvider>
   </div>
 </template>
@@ -35,11 +39,12 @@ export default {
     errors: {
       type: Array,
       required: false,
-      default: () => {
-        return [];
-      }
+      default: () => [],
     },
-    rules: {},
+    rules: {
+      type: String,
+      required: false,
+    },
     placeholder: {
       type: String,
       required: false,
@@ -76,10 +81,13 @@ export default {
 <style lang="scss" scoped>
 .contact-field {
   @apply mb-2 w-full;
+  .field {
+    @apply border-b border-black;
+    border-bottom-width: 2px;
+  }
   textarea,
   input {
-    @apply border-b border-black pb-1 appearance-none w-full;
-    border-bottom-width: 2px;
+    @apply appearance-none w-full pb-1;
   }
   textarea {
     resize: none;
@@ -107,8 +115,6 @@ export default {
 .error-container {
   position: relative;
   @apply pt-2;
-  // margin-top: 18px;
-  // margin-left: 5px;
 }
 
 .error-message {
@@ -117,11 +123,7 @@ export default {
   padding: 4px 4px;
   bottom: 0;
   position: absolute;
-  // margin-top: -6px;
-  // margin-left: 5px;
-  // opacity: 0.9;
   right: 0;
-  // bottom: 20px;
 }
 
 .input-error {
@@ -133,10 +135,13 @@ export default {
 }
 
 .error {
-  // opacity: 0.9;
   @apply bg-red-600 text-white text-xs border border-red-700 shadow-xl;
   z-index: 50;
+}
 
+.field-error {
+  @apply border-b border-red-600;
+  border-bottom-width: 2px;
 }
 
 .input-error::placeholder {

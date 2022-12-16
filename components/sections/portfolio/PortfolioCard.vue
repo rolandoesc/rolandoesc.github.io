@@ -29,11 +29,8 @@ export default {
     },
   },
   computed: {
-    isSmall() {
-      return this.$breakpoints.is === "xs";
-    },
     image() {
-      const imageSize = this.isSmall ? "imageMobile" : "image";
+      const imageSize = this.$breakpoints.isSmall ? "imageMobile" : "image";
       return require(`~/assets/images/projects${this.portfolioDetails[imageSize]}`);
     },
   },
