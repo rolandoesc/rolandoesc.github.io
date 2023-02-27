@@ -5,11 +5,21 @@
     role="region"
     aria-labelledby="About me bio"
   >
-    <OverCard cover-card right-side />
-    <AboutMe small-view>
+    <OverCard class="show-on-large" cover-card right-side />
+    <AboutMe class="show-on-large" small-view>
       <AboutMeBio />
       <AboutMeExperiencesDetails />
     </AboutMe>
+    <div class="relative show-on-small">
+      <AboutMe right>
+        <AboutMeBio />
+      </AboutMe>
+    </div>
+    <div class="relative show-on-small">
+      <AboutMe left>
+        <AboutMeExperiencesDetails :is-small="true" />
+      </AboutMe>
+    </div>
   </section>
 </template>
 <script>

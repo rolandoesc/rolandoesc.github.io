@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section-details"
+    class="section-details show-on-small"
     id="about-me-section-small"
     role="region"
     aria-labelledby="About me bio"

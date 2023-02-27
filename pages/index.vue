@@ -1,9 +1,9 @@
 <template>
   <div class="landing-container" role="main">
     <template v-if="this.$breakpoints.canBeDisplayed">
-      <IntroSection :is-small="isSmall" />
+      <IntroSection />
       <PortfolioSection />
-      <AboutMeSection :is-small="isSmall" />
+      <AboutMeSection />
       <DotsDivider class="section-divider" />
       <BlogPostsSection />
       <DotsDivider class="section-divider" />
@@ -32,11 +32,6 @@ export default {
     ContactMeSection,
     Footer,
     TooSmall,
-  },
-  computed: {
-    isSmall() {
-      return this.$breakpoints.isSmall;
-    },
   },
   head() {
     return {

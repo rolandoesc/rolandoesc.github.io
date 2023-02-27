@@ -5,29 +5,23 @@
     role="region"
     aria-labelledby="Intro"
   >
-    <over-card v-if="!isSmall" />
+    <over-card class="show-on-large" />
 
-    <intro :is-small="isSmall" />
-    <down-arrow v-if="!isSmall" />
+    <intro />
+    <down-arrow />
   </section>
 </template>
 
 <script>
-import DownArrow from '../../common/DownArrow.vue'
-import OverCard from '../../common/OverCard.vue'
-import Intro from './Intro.vue'
+import DownArrow from "../../common/DownArrow.vue";
+import OverCard from "../../common/OverCard.vue";
+import Intro from "./Intro.vue";
 
 export default {
   components: {
     OverCard,
     Intro,
-    DownArrow
-  },
-  props: {
-    isSmall: {
-      type: Boolean,
-      required: true,
-    },
+    DownArrow,
   },
 };
 </script>

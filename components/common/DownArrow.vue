@@ -1,5 +1,10 @@
 <template>
-  <a class="arrow" href="#portfolio-section" aria-hidden="true" focusable="false"></a>
+  <a
+    class="arrow show-on-large"
+    href="#portfolio-section"
+    aria-hidden="true"
+    focusable="false"
+  ></a>
 </template>
 
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 <template>
   <div id="intro">
-    <section-card has-dots :dots-bottom="isSmall" top-left>
+    <section-card has-dots top-left>
       <div id="intro-details">
         <h1 id="title" role="banner">Welcome!</h1>
         <h2>
@@ -28,12 +28,6 @@ export default {
   components: {
     NetworkIconsList,
     SectionCard,
-  },
-  props: {
-    isSmall: {
-      type: Boolean,
-      required: true,
-    },
   },
 };
 </script>

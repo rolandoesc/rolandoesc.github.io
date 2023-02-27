@@ -1,7 +1,7 @@
 <template>
   <div class="card" :class="cardClasses">
     <MobileOverCard :right="right" />
-    <CardDots v-if="hasDots" :class="[dotsBottom ? 'dots-bottom' : 'dots']" />
+    <CardDots v-if="hasDots" class="dots" />
     <slot />
   </div>
 </template>
@@ -82,13 +82,6 @@ export default {
   bottom: 35vh;
   z-index: 1;
 }
-.dots-bottom {
-  @apply transform rotate-90;
-  position: absolute;
-  right: 100px;
-  bottom: -44px;
-  z-index: 1;
-}
 .rotate,
 .rotate > * {
   @apply transform rotate-180;
@@ -100,6 +93,13 @@ export default {
   height: 44vh;
 }
 @media screen and (max-width: 679px) {
+  .dots {
+    @apply transform rotate-90;
+    position: absolute;
+    right: 100px;
+    bottom: -44px;
+    z-index: 1;
+  }
   .card {
     @apply relative;
     z-index: 2;

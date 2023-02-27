@@ -35,8 +35,23 @@ h1 {
     }
   }
 }
+.show-on-small {
+  display: flex;
+}
+.show-on-large {
+  display: flex;
+}
+
+@media screen and (min-width: 680px) {
+  .show-on-small {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 679px) {
+  .show-on-large {
+    display: none !important;
+  }
   .footer {
     @apply flex-col text-left;
     width: 90%;
