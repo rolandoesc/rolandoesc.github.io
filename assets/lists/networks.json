@@ -4,31 +4,36 @@
       "name": "Mastodon",
       "alt": "Mastodon's icon",
       "icon": "mastodon",
-      "link": "https://masto.ai/@chamo"
+      "link": "https://masto.ai/@chamo",
+      "show": false
     },
     {
       "name": "Twitter",
       "alt": "Twitter's icon",
       "icon": "twitter",
-      "link": "https://twitter.com/rolandoesc"
+      "link": "https://twitter.com/rolandoesc",
+      "show": false
     },
     {
       "name": "GitHub",
       "alt": "Github's icon",
       "icon": "github",
-      "link": "https://github.com/rolandoesc"
+      "link": "https://github.com/rolandoesc",
+      "show": false
     },
     {
       "name": "LinkedIn",
       "alt": "LinkedIn's icon",
       "icon": "linkedin",
-      "link": "https://linkedin.com/in/rolandoesc/"
+      "link": "https://linkedin.com/in/rolandoesc/",
+      "show": true
     },
     {
       "name": "Polywork",
       "alt": "Polyworks's icon",
       "icon": "polywork",
-      "link": "https://www.polywork.com/chamoesc"
+      "link": "https://www.polywork.com/chamoesc",
+      "show": false
     }
   ]
 }
