@@ -1,0 +1,48 @@
+/* Contact */
+
+#contact {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact > form {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+input,textarea {
+  border: none;
+  border-bottom: solid black 2pt;
+  font-family: "Lato";
+}
+
+input, input:required, textarea:required {
+  border-bottom: solid black 2pt;
+}
+input:invalid,textarea:invalid {
+  color: rgb(220 38 38);
+  border-bottom: solid rgb(220 38 38) 2pt;
+}
+input:valid,textarea:valid {
+  border-bottom: solid rgb(22 163 74) 2pt;
+}
+#contact > form > input::placeholder,textarea::placeholder {
+  color: black;
+}
+#contact > form > input {
+  resize: none;
+  flex-grow: 1;
+}
+#contact > form > textarea {
+  resize: none;
+  flex: 1 100%;
+}

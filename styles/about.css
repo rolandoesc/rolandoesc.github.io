@@ -1,0 +1,254 @@
+/* About & Experiences */
+:root {
+  --etsy-linear-gradient: linear-gradient(to right, #f1641e, #f1641e 50%, black 50%);
+  --yeeko-linear-gradient: linear-gradient(to right, #de006e, #de006e 50%, black 50%);
+  --aiwifi-linear-gradient: linear-gradient(to right, #2bc474, #2bc474 50%, black 50%);
+  --a3-linear-gradient: linear-gradient(to right, #6ec1e4, #6ec1e4 50%, black 50%);
+  --kinedu-linear-gradient: linear-gradient(to right, #0086d8, #0086d8 50%, black 50%);
+  --ipp-linear-gradient: linear-gradient(to right, #37b6c3, #37b6c3 50%, black 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+	  scroll-behavior: auto;
+	}
+}
+
+#about {
+    min-height: 100vh;
+}
+
+.half-section {
+  flex: 1;
+  text-align: justify;
+}
+
+.half-section:first-child {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.half-section:first-child > p {
+  margin-left: 0;
+}
+
+.half-section > h2 {
+  margin: 1rem auto 2rem 0; 
+}
+
+#about > .card {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li.experience {
+  font-weight: 700;
+  list-style-type: disc;
+}
+li.experience:not(:first-child) {
+  margin: 0.5rem auto;
+}
+
+li.experience::marker {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+}
+
+/* Companies' colors */
+.experience > a.company {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+#etsy {
+  background: var(--etsy-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  
+}
+
+#yeeko {
+  background: var(--yeeko-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+#aiwifi {
+  background: var(--aiwifi-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+#akubica {
+  background: var(--a3-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+#kinedu {
+  background: var(--kinedu-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+#ipp {
+  background: var(--ipp-linear-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+#ipp:hover,
+#kinedu:hover,
+#aiwifi:hover,
+#akubica:hover,
+#yeeko:hover,
+#etsy:hover {
+  background-position: 0 100%;
+}
+
+/* Skill Icons */
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-icon {
+  align-items: center;
+  width: 2rem;
+  height: 43px;
+}
+#skill-divider {
+    margin: 1rem auto;
+}
+
+#about > .transparent-card {
+    height: 50.5%;
+    top: 0.5%;
+    width: 95%;
+    z-index: 0;
+    /* Might move this later */
+    right: 0;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+}
+
+@media screen and (max-width: 640px) {
+    #about {
+        position: relative;
+        width: 100%;
+    }
+    .half-section {
+        position: relative;
+        height: 90vh;
+        /* height: 100%;
+        width: 100%; */
+    }
+    .card-on-small {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        /* background-color: #fff; */
+        border-radius: 40px;
+        border: solid #000 8px;
+    }
+
+    .card-on-small.right-corner > * {
+        padding: 1rem 2rem;
+    }
+
+    .card-on-small.right-corner > h2 {
+        margin: 1rem auto 0 0;
+    }
+    
+
+    .sided-to-corner {
+    position: absolute;
+    top: -20px;
+    }
+
+    .left-corner {
+        left: -20px;
+    }
+
+    .right-corner {
+        right: -20px;
+    }
+
+    #about > .show-on-small {
+      display: grid !important;
+      height: auto;
+      margin-bottom: 15vh;
+    }
+    #about > .show-on-small > .relative.half-view {
+      height: 75vh;
+    }
+
+    #about > .show-on-small > .relative.half-view:last-child {
+        margin-top: 7.5vh;
+    }
+    div.half-view {
+      height: auto;
+    }
+    #about > .show-on-small > div.relative.half-view > div.white-card {
+        display: flex;
+        border-color: transparent;
+        border-width: 8px;
+        /* min-height: 105%; */
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        z-index: -3;
+        top: 5px;
+        border-radius: 40px;
+    }
+    .shadow-right {
+        right: -20px;
+        box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
+    }
+    .shadow-left {
+        left: -20px;
+        height: 90%;
+        box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+    }
+    .white-card.shadow-right{
+      height: calc(100% - 20%);
+        /* height: 95% !important; */
+    }
+}

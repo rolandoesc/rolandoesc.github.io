@@ -1,0 +1,125 @@
+/* Intro */
+#intro-section {
+    height: 100vh;
+}
+
+h1#title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  font-size: 6rem;
+}
+
+#intro-section > div {
+  width: 66.67%;
+  height: 60vh;
+  margin: 5rem auto auto;
+  flex-direction: column;
+}
+
+#intro-card-text {
+  text-align: center;
+  position: relative;
+}
+
+#intro-card-text > p > i > a {
+  color: var(--primary-blue);
+  font-weight: bolder;
+  position: relative;
+  z-index: 3;
+}
+
+#button-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.dots {
+  position: absolute;
+  right: -8px;
+  bottom: 35vh;
+  z-index: 1;
+}
+
+#intro-section > .card > div {
+    margin: auto;
+}
+
+#intro-section > div.transparent-card {
+    width: 87%;
+    z-index: 2;
+    height: 40%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-5px) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(5px) rotate(45deg);
+    opacity: 1;
+  }
+}
+
+.arrow {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    border-left-color: #000;
+    border-top-color: #000;
+    border-radius: 4px;
+    border-right: 8px solid #000;
+    border-bottom: 8px solid #000;
+    height: 50px;
+    width: 50px;
+    left: 48.5%;
+    bottom: 15%;
+    -webkit-animation: float .75s infinite alternate;
+    animation: float .75s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+  h1#title {
+    font-size: 4rem;
+  }
+  .arrow {
+    display: none;
+  }
+    #intro-section > .left-corner {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+    }
+    .dots {
+        --transform-translate-x: 0;
+        --transform-translate-y: 0;
+        --transform-rotate: 0;
+        --transform-skew-x: 0;
+        --transform-skew-y: 0;
+        --transform-scale-x: 1;
+        --transform-scale-y: 1;
+        transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+        --transform-rotate: 90deg;
+        top: calc(60vh - 36px);
+        left: 205px;
+    }
+    #intro-section > div.transparent-card.over-left {
+        left: -25px;
+        top: 20px;
+        box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+        height: 60vh;
+        width: 66.67%;
+    }
+}
