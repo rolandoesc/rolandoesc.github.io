@@ -213,8 +213,8 @@ li.experience::marker {
       display: inherit;
     }
 
-    #about > .show-on-small > .relative.half-view:first-child {
-      margin-bottom: 10dvh;
+    #about > .show-on-small > .relative.half-view{
+      margin-bottom: 15dvh;
     }
     div.half-view {
       height: 100%;
