@@ -205,6 +205,8 @@ li.experience::marker {
       display: grid;
       height: auto;
       margin-bottom: 15vh;
+      grid-template-columns: repeat(2fr, 100px);
+      row-gap: 7.5vh;
     }
     #about > .show-on-small > .relative.half-view {
       min-height: 75vh;
@@ -212,11 +214,10 @@ li.experience::marker {
     }
 
     #about > .show-on-small > .relative.half-view:first-child {
-      margin-bottom: 7.5vh;
+      margin-bottom: 10vh;
     }
     div.half-view {
-      height: auto;
-      grid-template-columns: repeat(1, 1fr);
+      height: 100%;
     }
     .card-on-small {
       z-index: 2;
@@ -226,23 +227,17 @@ li.experience::marker {
       height: 100%;
     }
 
-    .card-on-small {
-      grid-column: 1;
-    }
     #about > .show-on-small > div.relative.half-view > div.white-card {
       border-color: transparent;
       border-width: 8px;
       width: 90%;
       background-color: #fff;
       border-radius: 40px;
-      grid-column: 1;
+
     }
-    .card-on-small, .white-card {
-      grid-row: 1/2;
-    }
-    #about > .show-on-small > .relative.half-view > .white-card ~ .card-on-small {
+    /* #about > .show-on-small > .relative.half-view > .white-card ~ .card-on-small {
       height: 100%;
-    }
+    } */
     .shadow-right {
       margin-left: 15%;
       box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
@@ -251,7 +246,7 @@ li.experience::marker {
       margin-left: -3%;
       box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
     }
-    .white-card.shadow-right, .white-card.shadow-left{
+    /* .white-card.shadow-right, .white-card.shadow-left{
       height: 100%;
-    }
+    } */
 }
