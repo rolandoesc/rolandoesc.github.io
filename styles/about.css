@@ -190,6 +190,10 @@ li.experience::marker {
       height: 100%;
     }
 
+    .card-on-small {
+      margin-bottom: 5vh;
+    }
+
     .card-on-small.right-corner > * {
       padding: 1rem 2rem;
     }
@@ -218,11 +222,11 @@ li.experience::marker {
       margin-bottom: 15vh;
     }
     #about > .show-on-small > .relative.half-view {
-      height: 75vh;
+      min-height: 75vh;
     }
 
-    #about > .show-on-small > .relative.half-view:last-child {
-        margin-top: 7.5vh;
+    #about > .show-on-small > .relative.half-view:first-child {
+        margin-bottom: 7.5vh;
     }
     div.half-view {
       height: auto;
@@ -247,11 +251,9 @@ li.experience::marker {
     }
     .shadow-left {
         left: -20px;
-        height: 90%;
         box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
     }
-    .white-card.shadow-right{
-      height: calc(100% - 20%);
-        /* height: 95% !important; */
+    .white-card.shadow-right, .white-card.shadow-left{
+      height: 100%;
     }
 }
