@@ -97,29 +97,32 @@ h1#title {
   .arrow {
     display: none;
   }
-    #intro-section > .left-corner {
-        position: absolute;
-        top: -20px;
-        left: -20px;
-    }
-    .dots {
-        --transform-translate-x: 0;
-        --transform-translate-y: 0;
-        --transform-rotate: 0;
-        --transform-skew-x: 0;
-        --transform-skew-y: 0;
-        --transform-scale-x: 1;
-        --transform-scale-y: 1;
-        transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
-        --transform-rotate: 90deg;
-        top: calc(60vh - 36px);
-        left: 205px;
-    }
-    #intro-section > div.transparent-card.over-left {
-        left: -25px;
-        top: 20px;
-        box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
-        height: 60vh;
-        width: 66.67%;
-    }
+  #intro-section > .left-corner {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .dots {
+    --transform-translate-x: 0;
+    --transform-translate-y: 0;
+    --transform-rotate: 0;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+    --transform-rotate: 90deg;
+    top: calc(60vh - 36px);
+    left: 205px;
+  }
+  #intro-section > div.transparent-card.over-left {
+    left: -25px;
+    top: 20px;
+    box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+    height: 60vh;
+    width: 80%;
+  }
+  #intro-section > div {
+    width: 80%;
+  }
 }

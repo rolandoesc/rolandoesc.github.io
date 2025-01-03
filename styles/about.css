@@ -183,7 +183,7 @@ li.experience::marker {
       z-index: 2;
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
       position: relative;
       border-radius: 40px;
       border: solid #000 8px;
@@ -235,7 +235,7 @@ li.experience::marker {
         display: flex;
         border-color: transparent;
         border-width: 8px;
-        width: 100%;
+        width: 90%;
         background-color: #fff;
         position: absolute;
         z-index: -3;
