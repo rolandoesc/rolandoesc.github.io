@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  position: fixed;
 }
 
 @media (prefers-reduced-motion) {
@@ -235,9 +236,6 @@ li.experience::marker {
       border-radius: 40px;
 
     }
-    /* #about > .show-on-small > .relative.half-view > .white-card ~ .card-on-small {
-      height: 100%;
-    } */
     .shadow-right {
       margin-left: 15%;
       box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
@@ -246,7 +244,4 @@ li.experience::marker {
       margin-left: -3%;
       box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
     }
-    /* .white-card.shadow-right, .white-card.shadow-left{
-      height: 100%;
-    } */
 }
