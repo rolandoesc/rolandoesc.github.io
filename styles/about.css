@@ -237,7 +237,9 @@ li.experience::marker {
         z-index: -3;
         top: 5px;
         border-radius: 40px;
-        height: 100%;
+    }
+    #about > .show-on-small > .relative.half-view > .white-card ~ .card-on-small {
+      height: 100%;
     }
     .shadow-right {
         right: -20px;
