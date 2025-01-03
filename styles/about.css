@@ -177,21 +177,6 @@ li.experience::marker {
     }
     .half-section {
       position: relative;
-      height: 90vh;
-    }
-    .card-on-small {
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      position: relative;
-      border-radius: 40px;
-      border: solid #000 8px;
-      height: 100%;
-    }
-
-    .card-on-small {
-      margin-bottom: 5vh;
     }
 
     .card-on-small.right-corner > * {
@@ -204,8 +189,8 @@ li.experience::marker {
     
 
     .sided-to-corner {
-    position: absolute;
-    top: -20px;
+      position: absolute;
+      top: -20px;
     }
 
     .left-corner {
@@ -223,35 +208,48 @@ li.experience::marker {
     }
     #about > .show-on-small > .relative.half-view {
       min-height: 75vh;
+      display: inherit;
     }
 
     #about > .show-on-small > .relative.half-view:first-child {
-        margin-bottom: 7.5vh;
+      margin-bottom: 7.5vh;
     }
     div.half-view {
       height: auto;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card-on-small {
+      z-index: 2;
+      width: 90%;
+      border-radius: 40px;
+      border: solid #000 8px;
+      height: 100%;
+    }
+
+    .card-on-small {
+      grid-column: 1;
     }
     #about > .show-on-small > div.relative.half-view > div.white-card {
-        display: flex;
-        border-color: transparent;
-        border-width: 8px;
-        width: 90%;
-        background-color: #fff;
-        position: absolute;
-        z-index: -3;
-        top: 5px;
-        border-radius: 40px;
+      border-color: transparent;
+      border-width: 8px;
+      width: 90%;
+      background-color: #fff;
+      border-radius: 40px;
+      grid-column: 1;
+    }
+    .card-on-small, .white-card {
+      grid-row: 1/2;
     }
     #about > .show-on-small > .relative.half-view > .white-card ~ .card-on-small {
       height: 100%;
     }
     .shadow-right {
-        right: -20px;
-        box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
+      margin-left: 15%;
+      box-shadow: 14px 2px 21px 3px rgba(0,0,0,.41);
     }
     .shadow-left {
-        left: -20px;
-        box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+      margin-left: -3%;
+      box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
     }
     .white-card.shadow-right, .white-card.shadow-left{
       height: 100%;
