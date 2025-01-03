@@ -19,7 +19,7 @@ html {
 }
 
 #about {
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .half-section {
@@ -204,17 +204,17 @@ li.experience::marker {
     #about > .show-on-small {
       display: grid;
       height: auto;
-      margin-bottom: 15vh;
+      margin-bottom: 15dvh;
       grid-template-columns: repeat(2fr, 100px);
-      row-gap: 7.5vh;
+      row-gap: 7.5dvh;
     }
     #about > .show-on-small > .relative.half-view {
-      min-height: 75vh;
+      min-height: 75dvh;
       display: inherit;
     }
 
     #about > .show-on-small > .relative.half-view:first-child {
-      margin-bottom: 10vh;
+      margin-bottom: 10dvh;
     }
     div.half-view {
       height: 100%;

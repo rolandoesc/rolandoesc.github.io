@@ -1,6 +1,6 @@
 /* Intro */
 #intro-section {
-    height: 100vh;
+    height: 100dvh;
 }
 
 h1#title {
@@ -15,7 +15,7 @@ h1#title {
 
 #intro-section > div {
   width: 66.67%;
-  height: 60vh;
+  height: 60dvh;
   margin: 5rem auto auto;
   flex-direction: column;
 }
@@ -42,7 +42,7 @@ h1#title {
 .dots {
   position: absolute;
   right: -8px;
-  bottom: 35vh;
+  bottom: 35dvh;
   z-index: 1;
 }
 
@@ -112,14 +112,14 @@ h1#title {
     --transform-scale-y: 1;
     transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
     --transform-rotate: 90deg;
-    top: calc(60vh - 36px);
+    top: calc(60dvh - 36px);
     left: 205px;
   }
   #intro-section > div.transparent-card.over-left {
     left: -25px;
     top: 20px;
     box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
-    height: 60vh;
+    height: 60dvh;
     width: 80%;
   }
   #intro-section > div {

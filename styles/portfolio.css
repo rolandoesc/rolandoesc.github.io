@@ -15,7 +15,7 @@ ul#portfolio-list__grid {
   border: solid black 4pt;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 60dvh;
   border-radius: 20px;
   position: relative;
   z-index: 0;
