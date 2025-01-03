@@ -184,11 +184,11 @@ ul.dots-divider {
   }
 
   .show-on-large {
-    display: none !important;
+    display: none;
   }
 
   .show-on-small {
-    display: inline !important;
+    display: inline;
   } 
   .footer {
     flex-direction: column;

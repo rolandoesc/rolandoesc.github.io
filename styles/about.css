@@ -156,45 +156,46 @@ li.experience::marker {
 }
 
 #about > .transparent-card {
-    height: 50.5%;
-    top: 0.5%;
-    width: 95%;
-    z-index: 0;
-    /* Might move this later */
-    right: 0;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
+  height: 50.5%;
+  top: 0.5%;
+  width: 95%;
+  z-index: 0;
+  /* Might move this later */
+  right: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 3px 2px 21px 14px rgba(0,0,0,.41);
 }
 
 @media screen and (max-width: 640px) {
     #about {
-        position: relative;
-        width: 100%;
+      position: relative;
+      width: 100%;
+    }
+    #about > .card {
+      display: none;
     }
     .half-section {
-        position: relative;
-        height: 90vh;
-        /* height: 100%;
-        width: 100%; */
+      position: relative;
+      height: 90vh;
     }
     .card-on-small {
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        /* background-color: #fff; */
-        border-radius: 40px;
-        border: solid #000 8px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      border-radius: 40px;
+      border: solid #000 8px;
+      height: 100%;
     }
 
     .card-on-small.right-corner > * {
-        padding: 1rem 2rem;
+      padding: 1rem 2rem;
     }
 
     .card-on-small.right-corner > h2 {
-        margin: 1rem auto 0 0;
+      margin: 1rem auto 0 0;
     }
     
 
@@ -204,11 +205,11 @@ li.experience::marker {
     }
 
     .left-corner {
-        left: -20px;
+      left: -20px;
     }
 
     .right-corner {
-        right: -20px;
+      right: -20px;
     }
 
     #about > .show-on-small {
@@ -230,7 +231,6 @@ li.experience::marker {
         display: flex;
         border-color: transparent;
         border-width: 8px;
-        /* min-height: 105%; */
         width: 100%;
         background-color: #fff;
         position: absolute;
