@@ -114,7 +114,6 @@
 
 #about-mobile {
     @apply grid grid-rows-2 grid-flow-col gap-8 mb-12 md:hidden;
-    /* height: auto; */
 }
 
 #about-mobile > #about-right, #about-left {
