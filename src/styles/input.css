@@ -113,7 +113,7 @@
 }
 
 #about-mobile {
-    @apply grid grid-rows-2 grid-flow-col gap-8 mb-12 md:hidden;
+    @apply grid grid-rows-2 grid-flow-col gap-8 mb-12 md:hidden overflow-x-hidden;
 }
 
 #about-mobile > #about-right, #about-left {
